@@ -9,8 +9,8 @@ $bg-color-segara: #dbd5cd;
 $bg-white: #fff;
 $bg-black: #000;
 //text-styles
-$primary-font: 'Poppins', sans-serif;
-$secondary-font: 'Oswald', sans-serif;
+$primary-font: "Poppins", sans-serif;
+$secondary-font: "Oswald", sans-serif;
 $primary-text: #512b1d;
 $secondary-text: #b34c00;
 $text-white: #fff;
@@ -18,47 +18,46 @@ $text-black: #151515;
 $text-grey: #e4e4e4;
 //change color of navbar to #3a2f2b
 
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 .navbar {
-    padding: 0.9375rem 0;
-    background-color: var(--bg-white);
-    --webkit-box-shadow: 0 0.5rem 0.375rem -0.375rem RGB(0 0 0 / 40%);
-    box-shadow: 0 0.5rem 0.375rem -0.375rem RGB(0 0 0 / 40%);
-    --webkit-transition: background 0s ease-in-out 1s,
-      margin-top 1s ease-in-out 1s, opacity 1s ease-in-out 1s;
-    transition: background 1s ease-in-out 1s, margin-top 1s ease-in-out 1s,
-      opacity 1s ease-in-out 1s;
-  }
-
-  .navbar-toggler {
-    border: 0;
-    color: $primary-text;
-    line-height: 2;
-  }
-  .navbar-toggler:focus{
-    box-shadow: none;
-  }
-  .nav-item {
-    margin: 0 0.525rem;
-  }
-  .nav-link{
-    font-size: 1.05rem;
-    font-weight: 500;
-    color: $primary-text!important;
-    display: inline-block;
+  padding: 0.9375rem 0;
+  background-color: var(--bg-white);
+  --webkit-box-shadow: 0 0.5rem 0.375rem -0.375rem RGB(0 0 0 / 40%);
+  box-shadow: 0 0.5rem 0.375rem -0.375rem RGB(0 0 0 / 40%);
+  --webkit-transition: background 0s ease-in-out 1s,
+    margin-top 1s ease-in-out 1s, opacity 1s ease-in-out 1s;
+  transition: background 1s ease-in-out 1s, margin-top 1s ease-in-out 1s,
+    opacity 1s ease-in-out 1s;
+}
+.navbar-brand {
+  margin: 5px;
+}
+.navbar-toggler {
+  border: 0;
+  color: $primary-text;
+  line-height: 2;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.nav-item {
+  margin: 0 0.525rem;
+}
+.nav-link {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: $primary-text !important;
+  display: inline-block;
 }
 
-.nav-link:hover, .nav-link.active{
-    color: $secondary-text!important;
+.nav-link:hover,
+.nav-link.active {
+  color: $secondary-text !important;
 }
 
-
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

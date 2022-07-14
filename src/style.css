@@ -17,6 +17,10 @@
   transition: background 1s ease-in-out 1s, margin-top 1s ease-in-out 1s, opacity 1s ease-in-out 1s;
 }
 
+.navbar-brand {
+  margin: 5px;
+}
+
 .navbar-toggler {
   border: 0;
   color: #512b1d;
@@ -38,7 +42,8 @@
   display: inline-block;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
   color: #b34c00 !important;
 }
 

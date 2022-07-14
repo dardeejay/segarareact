@@ -6,7 +6,7 @@ function NavBar() {
     <div className="header-wrapper">
       <nav className="navbar navbar-expand-lg">
         <div className="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="/">
             <img src={logo1} class="img-fluid" alt="icon" />
           </a>
           <button
