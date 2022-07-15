@@ -26,7 +26,7 @@ class Home extends Component {
                       touches.
                     </p>
                   </div>
-                  <a className="main-btn" href="#">
+                  <a className="main-btn" href="/">
                     Book Now
                   </a>
                 </div>

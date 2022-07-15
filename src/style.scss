@@ -108,8 +108,10 @@ p {
   transition: background 1s ease-in-out 1s, margin-top 1s ease-in-out 1s,
     opacity 1s ease-in-out 1s;
 }
-.navbar-brand {
-  margin: 5px;
+.img-fluid {
+  width: 9rem;
+  height: 9rem;
+  padding: 10px;
 }
 .navbar-toggler {
   border: 0;

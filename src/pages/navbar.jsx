@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import logo1 from "../assets/segara-logo.jpg";
+import logo1 from "../assets/SegaraHotels.ico";
 
 function NavBar() {
   return (
     <div className="header-wrapper">
       <nav className="navbar navbar-expand-lg">
         <div className="container">
-          <a class="navbar-brand" href="/">
-            <img src={logo1} class="img-fluid" alt="icon" />
+          <a className="navbar-brand" href="/">
+            <img src={logo1} className="img-fluid" alt="icon" />
           </a>
           <button
             className="navbar-toggler"
