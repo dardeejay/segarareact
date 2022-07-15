@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import events_Background from "../assets/Events.png";
 import "../styles/events.scss";
+import seasonal_event_img from "../assets/pics/seasonal-events1.png";
 class Events extends Component {
   state = {};
   style = {
@@ -19,9 +20,9 @@ class Events extends Component {
           </div>
         </div>
         <div className="events_divider1">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12 text-center mb-5">
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-12 text-center mb-5">
                 <h1>MAKE MEMORIES</h1>
                 <h5>―</h5>
                 <h3>Celebrate what's important to you at our function room</h3>
@@ -38,7 +39,7 @@ class Events extends Component {
                   The moment you've always dreamed of, made more magical with
                   us!
                 </h3>
-                <a className="eventInquireButton" href="/">
+                <a className="main-btn eventInquireButton" href="/">
                   Inquire
                 </a>
               </div>
@@ -49,7 +50,7 @@ class Events extends Component {
               <div className="event2_container_text">
                 <h2>BIRTHDAYS</h2>
                 <h3>Grateful for another year with you at Segara Hotels!</h3>
-                <a className="eventInquireButton" href="/">
+                <a className="main-btn eventInquireButton" href="/">
                   Inquire
                 </a>
               </div>
@@ -63,7 +64,7 @@ class Events extends Component {
                   Forming bonds and friendships as we achieve our dreams
                   together!
                 </h3>
-                <a className="eventInquireButton" href="/">
+                <a className="main-btn eventInquireButton" href="/">
                   Inquire
                 </a>
               </div>
@@ -71,8 +72,19 @@ class Events extends Component {
           </div>
         </div>
         <div className="seasonal_event1_container">
-          <div className="seasonal_event1_container_text"></div>
-          <img src="" alt="" />
+          <div className="seasonal_event1_container_text">
+            <h1>Luxury Dine &amp; Cruise</h1>
+            <p>
+              Make your #SegaraExperience worthwhile and enjoy the stunning
+              sunset of Subic Bay! Book your luxury yacht cruise and let our
+              Chef’s and butler waiters provide you our personalized service{" "}
+            </p>
+          </div>
+          <img
+            src={seasonal_event_img}
+            alt="seasonal-event-pic"
+            className="img-fluid"
+          />
         </div>
       </div>
     );
