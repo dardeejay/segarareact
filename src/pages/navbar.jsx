@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import logo1 from "../assets/SegaraHotels.ico";
 import { NavLink } from "react-router-dom";
 
