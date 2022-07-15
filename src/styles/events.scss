@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Poppins:wght@100&display=swap");
+
+$primary-color: #3a2f2b;
+$secondary-color: #f9d8ad;
+$bg-color: #f4f4f4;
+$bg-color-segara: #dbd5cd;
+$bg-white: #fff;
+$bg-black: #000;
+//text-styles
+$primary-font: "Poppins", sans-serif;
+$secondary-font: "Oswald", sans-serif;
+$primary-text: #512b1d;
+$secondary-text: #b34c00;
+$text-white: #fff;
+$text-black: #151515;
+$text-grey: #e4e4e4;
+
+//global-styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.events_frontPage {
+  height: 35.625rem;
+}
+.events_frontPage_container {
+  position: relative;
+  height: 35.625rem;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.events_frontPage_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #512b1d;
+  opacity: 0.7;
+  z-index: 0;
+}
+.events_frontPage_container_text {
+  height: 100%;
+  position: relative;
+  z-index: 99;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 0 240px;
+}
+
+.events_divider1 {
+  width: 100%;
+  height: 200px;
+}
+
+.events_divider1 .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.events_divider1 .container .row h1 {
+  color: $primary-text;
+}
+
+.events_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.events_container .event1 {
+  background-image: url("..//assets/pics/wedding_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 475px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+}
+
+.events_container .event2 {
+  background-image: url("..//assets/pics/birthday_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 475px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+}
+.events_container .event3 {
+  background-image: url("..//assets/pics/corpo_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 475px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+}
+
+.event1_container {
+  background-color: #512b1d;
+  margin-top: auto;
+  opacity: 0.7;
+  width: 100%;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.event2_container {
+  background-color: #512b1d;
+  margin-top: auto;
+  opacity: 0.7;
+  width: 100%;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.event3_container {
+  background-color: #512b1d;
+  margin-top: auto;
+  opacity: 0.7;
+  width: 100%;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
