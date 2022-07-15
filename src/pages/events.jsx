@@ -38,6 +38,9 @@ class Events extends Component {
                   The moment you've always dreamed of, made more magical with
                   us!
                 </h3>
+                <a className="eventInquireButton" href="/">
+                  Inquire
+                </a>
               </div>
             </div>
           </div>
@@ -46,6 +49,9 @@ class Events extends Component {
               <div className="event2_container_text">
                 <h2>BIRTHDAYS</h2>
                 <h3>Grateful for another year with you at Segara Hotels!</h3>
+                <a className="eventInquireButton" href="/">
+                  Inquire
+                </a>
               </div>
             </div>
           </div>
@@ -57,9 +63,16 @@ class Events extends Component {
                   Forming bonds and friendships as we achieve our dreams
                   together!
                 </h3>
+                <a className="eventInquireButton" href="/">
+                  Inquire
+                </a>
               </div>
             </div>
           </div>
+        </div>
+        <div className="seasonal_event1_container">
+          <div className="seasonal_event1_container_text"></div>
+          <img src="" alt="" />
         </div>
       </div>
     );
