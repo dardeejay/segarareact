@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import BackgroundImage from "../assets/HomePage.jpg";
+import "../style.scss";
 class Home extends Component {
   state = {};
   style = {
