@@ -6,6 +6,7 @@ class Events extends Component {
   style = {
     backgroundImage: `url(${events_Background})`,
   };
+
   render() {
     return (
       <div>
@@ -31,17 +32,32 @@ class Events extends Component {
         <div className="events_container">
           <div className="event1">
             <div className="event1_container">
-              <h1>Weddings</h1>
+              <div className="event1_container_text">
+                <h2>WEDDINGS</h2>
+                <h3>
+                  The moment you've always dreamed of, made more magical with
+                  us!
+                </h3>
+              </div>
             </div>
           </div>
           <div className="event2">
             <div className="event2_container">
-              <h1>Birthdays</h1>
+              <div className="event2_container_text">
+                <h2>BIRTHDAYS</h2>
+                <h3>Grateful for another year with you at Segara Hotels!</h3>
+              </div>
             </div>
           </div>
           <div className="event3">
             <div className="event3_container">
-              <h1>Corporate Events</h1>
+              <div className="event3_container_text">
+                <h2>CORPORATE EVENTS</h2>
+                <h3>
+                  Forming bonds and friendships as we achieve our dreams
+                  together!
+                </h3>
+              </div>
             </div>
           </div>
         </div>
