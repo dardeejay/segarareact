@@ -71,7 +71,7 @@ class Events extends Component {
             </div>
           </div>
         </div>
-        <div className="seasonal_event1_container">
+        <div className="seasonal_event1_container container">
           <div className="seasonal_event1_container_text">
             <h1>Luxury Dine &amp; Cruise</h1>
             <p>
@@ -80,11 +80,13 @@ class Events extends Component {
               Chef’s and butler waiters provide you our personalized service{" "}
             </p>
           </div>
-          <img
-            src={seasonal_event_img}
-            alt="seasonal-event-pic"
-            className="img-fluid"
-          />
+          <div className="seasonal_event1_container_img">
+            <img
+              src={seasonal_event_img}
+              alt="seasonal_event_img"
+              className="img-fluid"
+            />
+          </div>
         </div>
       </div>
     );

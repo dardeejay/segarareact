@@ -19,7 +19,7 @@ $text-grey: #e4e4e4;
   padding: 0;
   box-sizing: border-box;
 }
-
+/*Events Frontpage*/
 .events_frontPage {
   height: 35.625rem;
 }
@@ -51,7 +51,7 @@ $text-grey: #e4e4e4;
   align-items: center;
   padding: 0 240px;
 }
-
+/*Divider*/
 .events_divider1 {
   width: 100%;
   height: 200px;
@@ -69,7 +69,7 @@ $text-grey: #e4e4e4;
 .events_divider1 .container .row h1 {
   color: $primary-text;
 }
-
+/*events container*/
 .events_container {
   display: flex;
   justify-content: space-between;
@@ -194,4 +194,26 @@ $text-grey: #e4e4e4;
 .eventInquireButton {
   font-size: 0.9rem !important;
   margin: 0 0 0 0 !important;
+}
+
+/*special events section*/
+
+.seasonal_event1_container {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seasonal_event1_container_text p {
+  font-size: 1.6rem;
+  color: $text-white;
+  border: 1px solid black;
+  width: 40%;
+}
+
+.seasonal_event1_container_img {
+  width: 500px;
+  height: 500px;
+
+  border: 1px solid black;
 }
