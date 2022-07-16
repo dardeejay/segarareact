@@ -4,7 +4,6 @@ import App from './App';
 import '../src/styles/style.scss';
 
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <App />

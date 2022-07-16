@@ -1,5 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import logo1 from "../assets/SegaraHotels.ico";
+import { NavLink } from "react-router-dom";
 
 function NavBar() {
   return (
@@ -7,7 +8,7 @@ function NavBar() {
       <nav className="navbar navbar-expand-lg">
         <div className="container">
           <a className="navbar-brand" href="/">
-            <img src={logo1} className="img-fluid" alt="icon" />
+            <img src={logo1} className="img-fluid segaralogo" alt="icon" />
           </a>
           <button
             className="navbar-toggler"
@@ -27,29 +28,49 @@ function NavBar() {
           >
             <ul className="navbar-nav menu-navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
+                <NavLink
+                  activeClassName="nav-link active"
+                  className="nav-link"
+                  to="/"
+                >
                   Home
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/rooms-and-rates">
+                <NavLink
+                  className="nav-link"
+                  activeClassName="nav-link active"
+                  to="/rooms-and-rates"
+                >
                   Rooms &amp; Rates
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/restaurant">
+                <NavLink
+                  className="nav-link"
+                  activeClassName="nav-link active"
+                  to="/restaurant"
+                >
                   Restaurant
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/events">
+                <NavLink
+                  className="nav-link"
+                  activeClassName="nav-link active"
+                  to="/events"
+                >
                   Events
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/about-us">
+                <NavLink
+                  className="nav-link"
+                  activeClassName="nav-link active"
+                  to="/about-us"
+                >
                   About Us
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
