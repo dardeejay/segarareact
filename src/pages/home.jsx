@@ -8,6 +8,20 @@ class Home extends Component {
   };
   render() {
     return (
+      <div>
+      {/*try ko lang if tama, will delete if not*/}
+      <section id="home" className="banner_wrapper p-0">
+        <div className="video-container">
+          <video
+            src="../assets/Segara Hotels Subic - Promotional Video.mp4"
+            autoPlay
+            loop
+            muted
+          />
+        </div>
+      </section>
+      {/*try ko lang if tama, will delete if not*/}
+
       <section id="home" className="banner_wrapper p-0">
         <div className="HomeContainer">
           <div className="swiper-wrapper">
@@ -35,6 +49,7 @@ class Home extends Component {
           </div>
         </div>
       </section>
+    </div>
     );
   }
 }
