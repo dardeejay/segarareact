@@ -36,7 +36,7 @@ class Events extends Component {
         </div>
         {/*Seasonal Events*/}
         <div className="events_container container-fluid ">
-          <div className="row gx-5">
+          <div className="row gy-1">
             <div className="col-md-4 event1 event_column">
               <div className="event1_container container-fluid text-center">
                 <div className="events_text_container ">
@@ -78,39 +78,9 @@ class Events extends Component {
             </div>
           </div>
         </div>
-        <div className="seasonal_event1_container container">
-          <div className="seasonal_event1_container_text">
-            <h1>Luxury Dine &amp; Cruise</h1>
-            <p>
-              Make your #SegaraExperience worthwhile and enjoy the stunning
-              sunset of Subic Bay! Book your luxury yacht cruise and let our
-              Chef’s and butler waiters provide you our personalized service
-            </p>
-          </div>
-          <div className="seasonal_event1_container_img">
-            <img
-              src={seasonal_event_img}
-              alt="seasonal_event_img"
-              className="img-fluid"
-            />
-          </div>
-        </div>
-        <div className="seasonal_event2_container container">
-          <div className="seasonal_event2_container_text">
-            <h1>Luxury Dine &amp; Cruise</h1>
-            <p>
-              Make your #SegaraExperience worthwhile and enjoy the stunning
-              sunset of Subic Bay! Book your luxury yacht cruise and let our
-              Chef’s and butler waiters provide you our personalized service
-            </p>
-          </div>
-          <div className="seasonal_event2_container_img">
-            <img
-              src={seasonal_event_img}
-              alt="seasonal_event_img"
-              className="img-fluid"
-            />
-          </div>
+        {/*Seasonal Events*/}
+        <div className="container">
+          <div className="row"></div>
         </div>
       </div>
     );
