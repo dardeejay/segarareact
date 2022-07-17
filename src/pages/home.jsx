@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import BackgroundImage from "../assets/HomePage.jpg";
+import Video from "../assets/Segara Hotels Subic - Promotional Video.mp4";
 
 class Home extends Component {
   state = {};
@@ -13,10 +14,10 @@ class Home extends Component {
       <section id="home" className="banner_wrapper p-0">
         <div className="video-container">
           <video
-            src="../assets/Segara Hotels Subic - Promotional Video.mp4"
-            autoPlay
-            loop
-            muted
+            src={Video}
+            autoPlay="true"
+            loop="true"
+            muted="true"
           />
         </div>
       </section>
