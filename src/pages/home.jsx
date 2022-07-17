@@ -7,13 +7,7 @@ class Home extends Component {
   style = {
     backgroundImage: `url(${BackgroundImage})`,
   };
-  params = {
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  };
-
+  
   render() {
     return (
       <div>
