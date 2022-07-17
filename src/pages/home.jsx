@@ -18,7 +18,7 @@ class Home extends Component {
           </div>
         </section>
         {/* Divider */}
-        <div className="">
+        <div className="divider">
           <div className="container">
             <div className="row">
               <div className="col-sm-12 section-title text-center mb-5">

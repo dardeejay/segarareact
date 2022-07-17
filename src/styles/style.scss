@@ -201,13 +201,28 @@ p {
   border-color: $bg-black;
   color: $text-white;
 }
-video{
+video {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-.video-container{
+.video-container {
   width: 100%;
   height: 100%;
+}
+.divider {
+  width: 100%;
+  height: 200px;
+}
+.divider .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+.divider .container .row h1 {
+  color: $primary-text;
 }
 @import "/node_modules/bootstrap/scss/bootstrap.scss";
