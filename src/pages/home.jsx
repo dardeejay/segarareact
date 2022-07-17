@@ -17,6 +17,7 @@ class Home extends Component {
           </div>
         </section>
 
+        {/*
         <section id="home" className="banner_wrapper p-0">
           <div className="HomeContainer">
             <div className="swiper-wrapper">
@@ -44,6 +45,7 @@ class Home extends Component {
             </div>
           </div>
         </section>
+        */}
       </div>
     );
   }
