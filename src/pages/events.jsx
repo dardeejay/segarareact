@@ -11,14 +11,18 @@ class Events extends Component {
   render() {
     return (
       <div>
-        <div className="events_frontPage ">
-          <div className="events_frontPage_container" style={this.style}>
-            <div className="events_frontPage_container_text">
-              <h1>#SegaraExperience</h1>
-              <p></p>
+        {/*FrontPage*/}
+        <div className="events_frontPage container-fluid">
+          <div className="row">
+            <div className="events_frontPage_container" style={this.style}>
+              <div className="events_frontPage_container_text">
+                <h1>#SegaraExperience</h1>
+                <p></p>
+              </div>
             </div>
           </div>
         </div>
+        {/*Divider*/}
         <div className="events_divider1">
           <div className="container">
             <div className="row">
@@ -30,40 +34,43 @@ class Events extends Component {
             </div>
           </div>
         </div>
-        <div className="events_container">
-          <div className="event1">
-            <div className="event1_container">
-              <div className="event1_container_text">
-                <h2>WEDDINGS</h2>
-                <h3>
-                  The moment you've always dreamed of, made more magical with
-                  us!
-                </h3>
+        {/*Seasonal Events*/}
+        <div className="events_container container-fluid ">
+          <div className="row gx-5">
+            <div className="col-md-4 event1 event_column">
+              <div className="event1_container container-fluid text-center">
+                <div className="events_text_container ">
+                  <h2>WEDDINGS</h2>
+                  <h3>
+                    The moment you've always dreamed of, made more magical with
+                    us!
+                  </h3>
+                </div>
                 <a className="main-btn eventInquireButton" href="/">
                   Inquire
                 </a>
               </div>
             </div>
-          </div>
-          <div className="event2">
-            <div className="event2_container">
-              <div className="event2_container_text">
-                <h2>BIRTHDAYS</h2>
-                <h3>Grateful for another year with you at Segara Hotels!</h3>
+            <div className="col-md-4 event2 event_column ">
+              <div className="event2_container container-fluid  text-center">
+                <div className="events_text_container ">
+                  <h2>BIRTHDAYS</h2>
+                  <h3>Grateful for another year with you at Segara Hotels!</h3>
+                </div>
                 <a className="main-btn eventInquireButton" href="/">
                   Inquire
                 </a>
               </div>
             </div>
-          </div>
-          <div className="event3">
-            <div className="event3_container">
-              <div className="event3_container_text">
-                <h2>CORPORATE EVENTS</h2>
-                <h3>
-                  Forming bonds and friendships as we achieve our dreams
-                  together!
-                </h3>
+            <div className="col-md-4 event3 event_column">
+              <div className="event3_container container-fluid  text-center">
+                <div className="events_text_container ">
+                  <h2>CORPORATE EVENTS</h2>
+                  <h3>
+                    Forming bonds and friendships as we achieve our dreams
+                    together!
+                  </h3>
+                </div>
                 <a className="main-btn eventInquireButton" href="/">
                   Inquire
                 </a>
@@ -77,10 +84,27 @@ class Events extends Component {
             <p>
               Make your #SegaraExperience worthwhile and enjoy the stunning
               sunset of Subic Bay! Book your luxury yacht cruise and let our
-              Chef’s and butler waiters provide you our personalized service{" "}
+              Chef’s and butler waiters provide you our personalized service
             </p>
           </div>
           <div className="seasonal_event1_container_img">
+            <img
+              src={seasonal_event_img}
+              alt="seasonal_event_img"
+              className="img-fluid"
+            />
+          </div>
+        </div>
+        <div className="seasonal_event2_container container">
+          <div className="seasonal_event2_container_text">
+            <h1>Luxury Dine &amp; Cruise</h1>
+            <p>
+              Make your #SegaraExperience worthwhile and enjoy the stunning
+              sunset of Subic Bay! Book your luxury yacht cruise and let our
+              Chef’s and butler waiters provide you our personalized service
+            </p>
+          </div>
+          <div className="seasonal_event2_container_img">
             <img
               src={seasonal_event_img}
               alt="seasonal_event_img"
