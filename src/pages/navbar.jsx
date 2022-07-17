@@ -54,16 +54,21 @@ function NavBar() {
                   Restaurant
                 </NavLink>
               </li>
-              <li className="nav-item">
+              <li
+                className="nav-item"
+                style={{
+                  fontFamily: "Dancing Script",
+                }}
+              >
                 <NavLink
                   className="nav-link"
                   activeClassName="nav-link active"
                   to="/events"
                 >
-                  Events
+                  #SegaraExperience
                 </NavLink>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <NavLink
                   className="nav-link"
                   activeClassName="nav-link active"
@@ -71,7 +76,7 @@ function NavBar() {
                 >
                   About Us
                 </NavLink>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

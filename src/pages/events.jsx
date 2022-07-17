@@ -1,36 +1,29 @@
 import React, { Component } from "react";
-import events_Background from "../assets/Events.png";
 import "../styles/events.scss";
 import event1Pic from "../assets/pics/seasonal-events1.png";
 import event2Pic from "../assets/pics/event2.jpg";
 class Events extends Component {
-  style = {
-    backgroundImage: `url(${events_Background})`,
-  };
-
   render() {
     return (
       <div>
         {/*FrontPage*/}
         <div className="events_frontPage container-fluid">
           <div className="row">
-            <div className="events_frontPage_container" style={this.style}>
+            <div className="events_frontPage_container">
               <div className="events_frontPage_container_text">
-                <h1>#SegaraExperience</h1>
-                <p></p>
+                <h1 className="display-1">#SegaraExperience</h1>
               </div>
             </div>
           </div>
         </div>
         {/*Divider*/}
-        <div className="events_divider1">
-          <div className="container">
-            <div className="row">
-              <div className="col-sm-12 text-center mb-5">
-                <h1>MAKE MEMORIES</h1>
-                <h5>―</h5>
-                <h3>Celebrate what's important to you at our function room</h3>
-              </div>
+
+        <div className="container-fluid events_divider1">
+          <div className="row">
+            <div className="col-sm-12 text-center mb-5 divider_text">
+              <h1>MAKE MEMORIES</h1>
+              <h5>―</h5>
+              <h3>Celebrate what's important to you at our function room</h3>
             </div>
           </div>
         </div>
@@ -105,7 +98,7 @@ class Events extends Component {
               <img
                 src={event1Pic}
                 alt="seasonal_event_img"
-                className="img-fluid"
+                className="img-fluid event1img"
               />
             </div>
           </div>
@@ -117,7 +110,7 @@ class Events extends Component {
               <img
                 src={event2Pic}
                 alt="anniversary package"
-                className="img-fluid"
+                className="img-fluid event2im"
               />
             </div>
             <div className="col-md-6 sec2_text">
