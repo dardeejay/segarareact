@@ -7,10 +7,17 @@ class Home extends Component {
   style = {
     backgroundImage: `url(${BackgroundImage})`,
   };
+  params = {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      }
+  };
 
   render() {
     return (
       <div>
+        
         {/* Video */}
         <section id="home" className="banner_wrapper p-0">
           <div className="video-container">
@@ -29,6 +36,16 @@ class Home extends Component {
             </div>
           </div>
         </div>
+        {/* Swiper */}
+        <Swiper {...params}>
+        <div>Slide #1</div>
+        <div>Slide #2</div>
+        <div>Slide #3</div>
+        <div>Slide #4</div>
+        <div>Slide #5</div>
+        </Swiper>
+
+
         {/*
         <section id="home" className="banner_wrapper p-0">
           <div className="HomeContainer">
@@ -58,7 +75,10 @@ class Home extends Component {
           </div>
         </section>
         */}
-
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css"></link>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"></link>
+        <script src="https://unpkg.com/react-id-swiper@4.0.0/lib/react-id-swiper.js"></script>
+        <script src="https://unpkg.com/react-id-swiper@4.0.0/lib/react-id-swiper.min.js"></script>
       </div>
     );
   }
