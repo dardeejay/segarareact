@@ -3,7 +3,6 @@ import events_Background from "../assets/Events.png";
 import "../styles/events.scss";
 import seasonal_event_img from "../assets/pics/seasonal-events1.png";
 class Events extends Component {
-  state = {};
   style = {
     backgroundImage: `url(${events_Background})`,
   };
@@ -79,8 +78,67 @@ class Events extends Component {
           </div>
         </div>
         {/*Seasonal Events*/}
-        <div className="container">
-          <div className="row"></div>
+        <div className="seasonal_event1 container-fluid">
+          <div className="seasonal_event1_container row justify-content-between">
+            <div className="col-md-5 sec1_text">
+              <div className="row gy-0">
+                <div className="col-md-12 p-5">
+                  <h1>Luxury Dine &amp; Cruise</h1>
+                </div>
+                <div className="col-md-12 px-5">
+                  <p>
+                    Make your #SegaraExperience worthwhile and enjoy the
+                    stunning sunset of Subic Bay! Book your luxury yacht cruise
+                    and let our Chef’s and butler waiters provide you our
+                    personalized service
+                  </p>
+                </div>
+                <div className="col-md-12 px-5">
+                  <a className="main-btn eventInquireButton" href="/">
+                    Inquire
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-5 sec1_img">
+              <img
+                src={seasonal_event_img}
+                alt="seasonal_event_img"
+                className="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="seasonal_event1 container-fluid">
+          <div className="seasonal_event1_container row justify-content-between">
+            <div className="col-md-5 sec1_text">
+              <div className="row gy-0">
+                <div className="col-md-12 p-5">
+                  <h1>Luxury Dine &amp; Cruise</h1>
+                </div>
+                <div className="col-md-12 px-5">
+                  <p>
+                    Make your #SegaraExperience worthwhile and enjoy the
+                    stunning sunset of Subic Bay! Book your luxury yacht cruise
+                    and let our Chef’s and butler waiters provide you our
+                    personalized service
+                  </p>
+                </div>
+                <div className="col-md-12 px-5">
+                  <a className="main-btn eventInquireButton" href="/">
+                    Inquire
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-5 sec1_img">
+              <img
+                src={seasonal_event_img}
+                alt="seasonal_event_img"
+                className="img-fluid"
+              />
+            </div>
+          </div>
         </div>
       </div>
     );

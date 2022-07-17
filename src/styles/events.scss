@@ -119,26 +119,26 @@ $text-grey: #e4e4e4;
 }
 /*special events section*/
 
-.seasonal_event1_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 600px;
+.seasonal_event1 {
+  margin-top: 75px;
+  padding: 0;
 }
-
-.seasonal_event1_container_text {
-  margin-top: -200px;
+.seasonal_event1 .sec1_text {
+  margin-left: 30px;
 }
-.seasonal_event1_container_text h1 {
-  color: $primary-text;
-}
-.seasonal_event1_container_text p {
+.seasonal_event1 .sec1_text p {
+  font-family: $primary-font;
+  font-weight: 700;
   font-size: 1.6rem;
-  color: $text-white;
-  width: 40%;
-  font-family: $secondary-font;
+  line-height: 40px;
 }
-
-.seasonal_event1_container_img {
-  width: 100%;
+.seasonal_event1 .sec1_text h1 {
+  color: $primary-text;
+  text-transform: none;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+.seasonal_event1 .sec1_img {
+  width: 40%px;
+  padding: 50px;
 }
