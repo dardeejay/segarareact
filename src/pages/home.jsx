@@ -8,18 +8,35 @@ class Home extends Component {
     backgroundImage: `url(${BackgroundImage})`,
   };
   params = {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-      }
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   };
 
   render() {
     return (
       <div>
-        
         {/* Video */}
         <section id="home" className="banner_wrapper p-0">
+          <div className="Home-caption text-center">
+            <div>
+              <h1>Segara Hotels</h1>
+              <div className="home-text-container">
+                <p>
+                  Segara Villas and Suites is a serene boutique hotel located in
+                  a secluded area of Subic Bay. Decorated in modern Asian
+                  design, the stylish lodgings are housed in a peaceful private
+                  compound, providing a welcome break from hectic city life.
+                  Sophisticated interiors showcase Balinese accents combined
+                  with contemporary yet homey touches.
+                </p>
+              </div>
+              <a className="main-btn" href="/">
+                Book Now
+              </a>
+            </div>
+          </div>
           <div className="video-container">
             <video src={Video} autoPlay="true" loop="true" muted="true" />
           </div>
@@ -38,13 +55,12 @@ class Home extends Component {
         </div>
         {/* Swiper */}
         <Swiper {...params}>
-        <div>Slide #1</div>
-        <div>Slide #2</div>
-        <div>Slide #3</div>
-        <div>Slide #4</div>
-        <div>Slide #5</div>
+          <div>Slide #1</div>
+          <div>Slide #2</div>
+          <div>Slide #3</div>
+          <div>Slide #4</div>
+          <div>Slide #5</div>
         </Swiper>
-
 
         {/*
         <section id="home" className="banner_wrapper p-0">
