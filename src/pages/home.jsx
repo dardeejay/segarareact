@@ -8,16 +8,15 @@ class Home extends Component {
     backgroundImage: `url(${BackgroundImage})`,
   };
   params = {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-      }
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   };
 
   render() {
     return (
       <div>
-        
         {/* Video */}
         <section id="home" className="banner_wrapper p-0">
           <div className="video-container">
@@ -37,14 +36,13 @@ class Home extends Component {
           </div>
         </div>
         {/* Swiper */}
-        <Swiper {...params}>
-        <div>Slide #1</div>
-        <div>Slide #2</div>
-        <div>Slide #3</div>
-        <div>Slide #4</div>
-        <div>Slide #5</div>
-        </Swiper>
-
+        {/* <Swiper {...params}>
+          <div>Slide #1</div>
+          <div>Slide #2</div>
+          <div>Slide #3</div>
+          <div>Slide #4</div>
+          <div>Slide #5</div>
+        </Swiper> */}
 
         {/*
         <section id="home" className="banner_wrapper p-0">

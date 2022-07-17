@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import events_Background from "../assets/Events.png";
 import "../styles/events.scss";
-import seasonal_event_img from "../assets/pics/seasonal-events1.png";
+import event1Pic from "../assets/pics/seasonal-events1.png";
+import event2Pic from "../assets/pics/event2.jpg";
 class Events extends Component {
   style = {
     backgroundImage: `url(${events_Background})`,
@@ -80,7 +81,7 @@ class Events extends Component {
         {/*Seasonal Events*/}
         <div className="seasonal_event1 container-fluid">
           <div className="seasonal_event1_container row justify-content-between">
-            <div className="col-md-5 sec1_text">
+            <div className="col-md-6 sec1_text">
               <div className="row gy-0">
                 <div className="col-md-12 p-5">
                   <h1>Luxury Dine &amp; Cruise</h1>
@@ -102,26 +103,33 @@ class Events extends Component {
             </div>
             <div className="col-md-5 sec1_img">
               <img
-                src={seasonal_event_img}
+                src={event1Pic}
                 alt="seasonal_event_img"
                 className="img-fluid"
               />
             </div>
           </div>
         </div>
-        <div className="seasonal_event1 container-fluid">
+        {/*Seasonal events2*/}
+        <div className="seasonal_event2 container-fluid">
           <div className="seasonal_event1_container row justify-content-between">
-            <div className="col-md-5 sec1_text">
+            <div className="col-md-5 sec2_img">
+              <img
+                src={event2Pic}
+                alt="anniversary package"
+                className="img-fluid"
+              />
+            </div>
+            <div className="col-md-6 sec2_text">
               <div className="row gy-0">
                 <div className="col-md-12 p-5">
-                  <h1>Luxury Dine &amp; Cruise</h1>
+                  <h1>Anniversary Celebration Package</h1>
                 </div>
                 <div className="col-md-12 px-5">
                   <p>
-                    Make your #SegaraExperience worthwhile and enjoy the
-                    stunning sunset of Subic Bay! Book your luxury yacht cruise
-                    and let our Chef’s and butler waiters provide you our
-                    personalized service
+                    How do you want to surprise her for your upcoming
+                    anniversary? Running out of ideas? Worry no more! We’re to
+                    help you! Let our team arrange everything for you.
                   </p>
                 </div>
                 <div className="col-md-12 px-5">
@@ -130,13 +138,6 @@ class Events extends Component {
                   </a>
                 </div>
               </div>
-            </div>
-            <div className="col-md-5 sec1_img">
-              <img
-                src={seasonal_event_img}
-                alt="seasonal_event_img"
-                className="img-fluid"
-              />
             </div>
           </div>
         </div>

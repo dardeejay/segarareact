@@ -122,6 +122,7 @@ $text-grey: #e4e4e4;
 .seasonal_event1 {
   margin-top: 75px;
   padding: 0;
+  border-bottom: 1px solid black;
 }
 .seasonal_event1 .sec1_text {
   margin-left: 30px;
@@ -139,6 +140,34 @@ $text-grey: #e4e4e4;
   border-bottom: 1px solid black;
 }
 .seasonal_event1 .sec1_img {
+  width: 40%px;
+  padding: 50px;
+}
+
+.seasonal_event2 {
+  margin-top: 75px;
+  padding: 0;
+}
+
+.seasonal_event2 .sec2_text {
+  margin-right: 30px;
+  text-align: right;
+}
+
+.seasonal_event2 .sec2_text h1 {
+  color: $primary-text;
+  text-transform: none;
+  padding-bottom: 10px;
+}
+
+.seasonal_event2 .sec2_text p {
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 40px;
+}
+
+.seasonal_event2 .sec2_img {
   width: 40%px;
   padding: 50px;
 }
