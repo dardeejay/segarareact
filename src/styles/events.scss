@@ -47,7 +47,7 @@ $text-grey: #e4e4e4;
   position: relative;
   z-index: 99;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   padding: 0 240px;
 }
@@ -199,21 +199,25 @@ $text-grey: #e4e4e4;
 /*special events section*/
 
 .seasonal_event1_container {
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 600px;
+}
+
+.seasonal_event1_container_text {
+  margin-top: -200px;
+}
+.seasonal_event1_container_text h1 {
+  color: $primary-text;
 }
 .seasonal_event1_container_text p {
   font-size: 1.6rem;
   color: $text-white;
-  border: 1px solid black;
   width: 40%;
+  font-family: $secondary-font;
 }
 
 .seasonal_event1_container_img {
-  width: 500px;
-  height: 500px;
-
-  border: 1px solid black;
+  width: 100%;
 }
