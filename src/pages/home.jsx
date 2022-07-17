@@ -11,12 +11,24 @@ class Home extends Component {
   render() {
     return (
       <div>
+        {/* Video */}
         <section id="home" className="banner_wrapper p-0">
           <div className="video-container">
             <video src={Video} autoPlay="true" loop="true" muted="true" />
           </div>
         </section>
-
+        {/* Divider */}
+        <div className="">
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-12 section-title text-center mb-5">
+                <h3>A TRULY LUXURIOUS UNFORGETTABLE STAY</h3>
+                <h5>―</h5>
+                <h1>VILLAS • SUITES • RESIDENCIAS</h1>
+              </div>
+            </div>
+          </div>
+        </div>
         {/*
         <section id="home" className="banner_wrapper p-0">
           <div className="HomeContainer">
@@ -46,6 +58,7 @@ class Home extends Component {
           </div>
         </section>
         */}
+
       </div>
     );
   }
