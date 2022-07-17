@@ -7,12 +7,6 @@ class Home extends Component {
   style = {
     backgroundImage: `url(${BackgroundImage})`,
   };
-  params = {
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  };
 
   render() {
     return (
@@ -35,15 +29,6 @@ class Home extends Component {
             </div>
           </div>
         </div>
-        {/* Swiper */}
-        {/* <Swiper {...params}>
-          <div>Slide #1</div>
-          <div>Slide #2</div>
-          <div>Slide #3</div>
-          <div>Slide #4</div>
-          <div>Slide #5</div>
-        </Swiper> */}
-
         {/*
         <section id="home" className="banner_wrapper p-0">
           <div className="HomeContainer">
