@@ -21,7 +21,7 @@ class Home extends Component {
         <div className="divider">
           <div className="container">
             <div className="row">
-              <div className="col-sm-12 section-title text-center mb-5">
+              <div className="col-sm-12 text-center mb-5">
                 <h3>A TRULY LUXURIOUS UNFORGETTABLE STAY</h3>
                 <h5>―</h5>
                 <h1>VILLAS • SUITES • RESIDENCIAS</h1>
