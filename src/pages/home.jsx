@@ -7,6 +7,12 @@ class Home extends Component {
   style = {
     backgroundImage: `url(${BackgroundImage})`,
   };
+  video = {
+    segaraVideo: `url(${Video})`,
+    autoPlay: "true", 
+    loop: "true", 
+    muted: "true",
+  };
 
   render() {
     return (
@@ -16,11 +22,11 @@ class Home extends Component {
             <video src={Video} autoPlay="true" loop="true" muted="true" />
           </div>
         </section>
-        
+
         <section id="home" className="banner_wrapper p-0">
           <div className="HomeContainer">
             <div className="swiper-wrapper">
-              <div className="HomeContent" style={this.style}>
+              <div className="HomeContent" style={this.video}>
                 <div className="Home-caption text-center">
                   <div>
                     <h1>Segara Hotels</h1>
