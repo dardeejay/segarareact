@@ -75,10 +75,6 @@ class Home extends Component {
           </div>
         </section>
         */}
-        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css"></link>
-        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"></link>
-        <script src="https://unpkg.com/react-id-swiper@4.0.0/lib/react-id-swiper.js"></script>
-        <script src="https://unpkg.com/react-id-swiper@4.0.0/lib/react-id-swiper.min.js"></script>
       </div>
     );
   }
