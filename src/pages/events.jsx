@@ -1,8 +1,25 @@
-import React, { Component } from "react";
+import React, { Component, useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Navigation, EffectFade, Autoplay } from "swiper";
+import "swiper/css/navigation";
+import "swiper/css/effect-fade";
 import "../styles/events.scss";
-import event1Pic from "../assets/pics/seasonal-events1.png";
-import event2Pic from "../assets/pics/event2.jpg";
+import event2Pic1 from "../assets/pics/event2.jpg";
+import event1Pic from "../assets/Luxury-Cruise/luxurycruise1.jpg";
+import event1Pic2 from "../assets/Luxury-Cruise/luxurycruise2.jpg";
+import event1Pic3 from "../assets/Luxury-Cruise/luxurycruise3.jpg";
+import event1Pic4 from "../assets/Luxury-Cruise/luxurycruise4.jpg";
+import event1Pic5 from "../assets/Luxury-Cruise/luxurycruise5.jpg";
+import event1Pic6 from "../assets/Luxury-Cruise/luxurycruise6.jpg";
+import event1Pic7 from "../assets/Luxury-Cruise/luxurycruise7.jpg";
+import event1Pic8 from "../assets/Luxury-Cruise/luxurycruise8.jpg";
+import event1Pic9 from "../assets/Luxury-Cruise/luxurycruise9.jpg";
+import event1Pic10 from "../assets/Luxury-Cruise/luxurycruise10.jpg";
 class Events extends Component {
+  pics = {
+    luxuryCruise1: "../assets/Luxury-Cruise/luxurycruise1.jpg",
+  };
   render() {
     return (
       <div>
@@ -94,12 +111,47 @@ class Events extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-md-5 sec1_img">
-              <img
-                src={event1Pic}
-                alt="seasonal_event_img"
-                className="img-fluid event1img"
-              />
+            <div className="col-md-6 sec1_img ">
+              <Swiper
+                modules={[EffectFade, Autoplay]}
+                autoplay={true}
+                effect="fade"
+                speed={800}
+                slidesPerView={1}
+                loop
+                className="swiper-container"
+              >
+                <SwiperSlide>
+                  <img src={event1Pic} alt="gaming" className="img-fluid" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={event1Pic2} alt="gaming" className="img-fluid" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={event1Pic3} alt="gaming" className="img-fluid" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={event1Pic4} alt="gaming" className="img-fluid" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={event1Pic5} alt="gaming" className="img-fluid" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={event1Pic6} alt="gaming" className="img-fluid" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={event1Pic7} alt="gaming" className="img-fluid" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={event1Pic8} alt="gaming" className="img-fluid" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={event1Pic9} alt="gaming" className="img-fluid" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={event1Pic10} alt="gaming" className="img-fluid" />
+                </SwiperSlide>
+              </Swiper>
             </div>
           </div>
         </div>
@@ -108,7 +160,7 @@ class Events extends Component {
           <div className="seasonal_event1_container row justify-content-between">
             <div className="col-md-5 sec2_img">
               <img
-                src={event2Pic}
+                src={event2Pic1}
                 alt="anniversary package"
                 className="img-fluid event2im"
               />

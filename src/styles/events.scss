@@ -128,12 +128,10 @@ $text-grey: #e4e4e4;
 /*special events section*/
 
 .seasonal_event1 {
-  margin-top: 75px;
-  padding: 0;
-  border-bottom: 1px solid black;
 }
 .seasonal_event1 .sec1_text {
   padding-left: 30px;
+  margin-top: 40px;
 }
 .seasonal_event1 .sec1_text p {
   font-family: $primary-font;
@@ -148,9 +146,17 @@ $text-grey: #e4e4e4;
   border-bottom: 1px solid black;
 }
 .seasonal_event1 .sec1_img {
-  width: 40%px;
-  padding: 50px;
+  padding: 0;
+  --webkit-box-shadow: 0 0.5rem 0.375rem -0.375rem RGB(0 0 0 / 40%);
+  box-shadow: 0 0.5rem 0.375rem -0.375rem RGB(0 0 0 / 40%);
 }
+.seasonal_event1 .sec1_img .swiper-container {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .seasonal_event1 .sec1_img .event1img {
   --webkit-box-shadow: 0 0.5rem 0.375rem -0.375rem RGB(0 0 0 / 40%);
   box-shadow: 0 0.5rem 0.375rem -0.375rem RGB(0 0 0 / 40%);
