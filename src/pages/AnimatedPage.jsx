@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./home";
 import RoomsAndRates from "./rooms&rates";

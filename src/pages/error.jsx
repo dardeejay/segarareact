@@ -1,8 +1,19 @@
 import React, { Component } from "react";
 import { motion } from "framer-motion";
+import logoSegara from "../assets/SegaraHotels.png";
 
 class ErrorPage extends Component {
-  state = {};
+  imgstyle = {
+    width: "30%",
+    height: "30%",
+  };
+  containerStyle = {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: "10%",
+  };
   render() {
     return (
       <motion.div
@@ -10,7 +21,10 @@ class ErrorPage extends Component {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
       >
-        <h1>Error 404 Page not Found!</h1>
+        <div style={this.containerStyle}>
+          <img src={logoSegara} alt="error" style={this.imgstyle} />
+          <h1 style={{ color: "ActiveCaption" }}>ERROR 404 PAGE NOT FOUND!</h1>
+        </div>
       </motion.div>
     );
   }

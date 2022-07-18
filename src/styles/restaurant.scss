@@ -1,0 +1,42 @@
+$primary-color: #3a2f2b;
+$secondary-color: #f9d8ad;
+$bg-color: #f4f4f4;
+$bg-color-segara: #dbd5cd;
+$bg-white: #fff;
+$bg-black: #000;
+//text-styles
+$primary-font: "Poppins", sans-serif;
+$secondary-font: "Oswald", sans-serif;
+$cursive-font: "Dancing Script", cursive;
+$primary-text: #512b1d;
+$secondary-text: #b34c00;
+$text-white: #fff;
+$text-black: #151515;
+$text-grey: #e4e4e4;
+
+//global-styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//resturant title
+.resto_ts_wrapper {
+  background-image: url("../assets/restaurant/RestoBanner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 35.625rem;
+}
+
+.resto_ts_wrapper .row {
+  background-color: rgba(81, 43, 29, 0.7);
+  height: 100%;
+}
+
+.resto_ts_wrapper .row .col-sm-4 {
+  border: 1px solid black;
+  position: relative;
+  z-index: 1;
+}
