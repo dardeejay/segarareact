@@ -172,7 +172,7 @@ class Events extends Component {
                 </div>
                 <div className="col-md-12 px-5">
                   <p>
-                    How do you want to surprise her for your upcoming
+                    &nbsp; How do you want to surprise her for your upcoming
                     anniversary? Running out of ideas? Worry no more! We’re to
                     help you! Let our team arrange everything for you.
                   </p>
