@@ -15,9 +15,15 @@ class Restaurant extends Component {
         <div className="container-fluid resto_ts_wrapper">
           <div className="blur_container"></div>
           <div className="row justify-content-center ">
-            <div className="col-sm-3 py-5">
-              <img src={restoLogo} alt="" className="img-fluid" />
-              <a></a>
+            <div className="col-md-4 py-5 text-center resto_ts_content">
+              <img
+                src={restoLogo}
+                alt="AsianSpicesLogo"
+                className="img-fluid"
+              />
+              <a className="main-btn menu-btn" href="/restaurant/menu">
+                View Our Menu
+              </a>
             </div>
           </div>
         </div>

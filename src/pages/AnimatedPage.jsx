@@ -6,7 +6,7 @@ import Restaurant from "./restaurant";
 import Events from "./events";
 import AboutUs from "./about-us";
 import ErrorPage from "./error";
-
+import Menu from "./menu";
 import { AnimatePresence } from "framer-motion";
 
 function AnimatedPage() {
@@ -20,6 +20,7 @@ function AnimatedPage() {
         <Route path="/events" element={<Events />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="*" element={<ErrorPage />} />
+        <Route path="/restaurant/menu" element={<Menu />} />
       </Routes>
     </AnimatePresence>
   );
