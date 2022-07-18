@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import about_us_Background from "../assets/About_Us.jpg";
 import "../styles/about-us.scss";
 import About_Segara_img from "../assets/pics/About_Logo.png";
+import { motion } from "framer-motion";
 
 class AboutUs extends Component {
   state = {};
@@ -11,7 +12,11 @@ class AboutUs extends Component {
 
   render() {
     return (
-      <div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
         <div>
           <div className="about_us">
             <div className="about_us_container" style={this.style}>
@@ -61,7 +66,7 @@ class AboutUs extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     );
   }
 }

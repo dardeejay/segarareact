@@ -1,7 +1,7 @@
 import React, { Component, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Navigation, EffectFade, Autoplay } from "swiper";
+import { EffectFade, Autoplay } from "swiper";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import "../styles/events.scss";
@@ -16,13 +16,19 @@ import event1Pic7 from "../assets/Luxury-Cruise/luxurycruise7.jpg";
 import event1Pic8 from "../assets/Luxury-Cruise/luxurycruise8.jpg";
 import event1Pic9 from "../assets/Luxury-Cruise/luxurycruise9.jpg";
 import event1Pic10 from "../assets/Luxury-Cruise/luxurycruise10.jpg";
+import { motion } from "framer-motion";
+
 class Events extends Component {
   pics = {
     luxuryCruise1: "../assets/Luxury-Cruise/luxurycruise1.jpg",
   };
   render() {
     return (
-      <div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
         {/*FrontPage*/}
         <div className="events_frontPage container-fluid">
           <div className="row">
@@ -186,7 +192,7 @@ class Events extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     );
   }
 }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import BackgroundImage from "../assets/HomePage.jpg";
 import Video from "../assets/Segara Hotels Subic - Promotional Video.mp4";
-
+import { motion } from "framer-motion";
 class Home extends Component {
   state = {};
   style = {
@@ -10,7 +10,11 @@ class Home extends Component {
 
   render() {
     return (
-      <div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
         {/* Video */}
         <section id="home" className="banner_wrapper p-0">
           <div className="video-container">
@@ -58,7 +62,7 @@ class Home extends Component {
           </div>
         </section>
         */}
-      </div>
+      </motion.div>
     );
   }
 }
