@@ -2,6 +2,17 @@ import React, { Component } from "react";
 import BackgroundImage from "../assets/HomePage.jpg";
 import Video from "../assets/Segara Hotels Subic - Promotional Video.mp4";
 import { motion } from "framer-motion";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { EffectFade, Autoplay, Pagination, Navigation } from "swiper";
+import "swiper/css/navigation";
+import "swiper/css/effect-fade";
+import "swiper/css/pagination";
+import HomeSlide1 from "../assets/HomeSwipe/1.jpg";
+import HomeSlide2 from "../assets/HomeSwipe/2.jpg";
+import HomeSlide3 from "../assets/HomeSwipe/3.jpg";
+import HomeSlide4 from "../assets/HomeSwipe/4.jpg";
+
 class Home extends Component {
   state = {};
   style = {
@@ -33,6 +44,35 @@ class Home extends Component {
             </div>
           </div>
         </div>
+        {/* Swiper */}
+        <Swiper
+          modules={[EffectFade, Pagination, Navigation]}
+          effect="fade"
+          speed={1300}
+          slidesPerView={1}
+          navigation={true}
+          pagination={{ clickable: true }}
+          loop
+          className="HomeSwiper"
+        >
+          <SwiperSlide className="HomeSwiperSlide">
+            <img src={HomeSlide1} alt="" className="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={HomeSlide2} alt="" className="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={HomeSlide3} alt="" className="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={HomeSlide4} alt="" className="" />
+          </SwiperSlide>
+        </Swiper>
+        {/* Swiper */}
+        <section id="home" className="banner_wrapper p-0">
+          
+        </section>
+
         {/*
         <section id="home" className="banner_wrapper p-0">
           <div className="HomeContainer">
