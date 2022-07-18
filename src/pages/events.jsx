@@ -120,7 +120,9 @@ class Events extends Component {
             <div className="col-md-6 sec1_img ">
               <Swiper
                 modules={[EffectFade, Autoplay]}
-                autoplay={(true, { disableOnInteraction: false })}
+                autoplay={
+                  (true, { disableOnInteraction: false }, { delay: 1000 })
+                }
                 effect="fade"
                 speed={800}
                 slidesPerView={1}

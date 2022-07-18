@@ -112,9 +112,9 @@ p {
   z-index: 99;
 }
 .segaralogo {
-  width: 9rem;
-  height: 9rem;
-  padding: 10px;
+  width: 7rem;
+  height: 7rem;
+  padding: 0;
 }
 .navbar-toggler {
   border: 0;
@@ -128,7 +128,7 @@ p {
   margin: 0 0.525rem;
 }
 .nav-link {
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   font-weight: 500;
   color: $primary-text !important;
   display: inline-block;
@@ -225,7 +225,7 @@ video {
   align-items: center;
   padding-top: 40px;
 }
-.HomeSwiper{
+.HomeSwiper {
   height: 43.625rem;
 }
 .swiper-slide img {
@@ -235,20 +235,20 @@ video {
   object-fit: cover;
 }
 .HomeSwiper .swiper-pagination-bullet {
-  width: .9375rem;
-  height: .9375rem;
+  width: 0.9375rem;
+  height: 0.9375rem;
   background-color: #f9d8ad;
 }
-.HomeSwiper .swiper-button-prev{
+.HomeSwiper .swiper-button-prev {
   color: $secondary-color;
 }
-.HomeSwiper .swiper-button-prev:hover{
+.HomeSwiper .swiper-button-prev:hover {
   color: $secondary-text;
 }
-.HomeSwiper .swiper-button-next{
+.HomeSwiper .swiper-button-next {
   color: $secondary-color;
 }
-.HomeSwiper .swiper-button-next:hover{
+.HomeSwiper .swiper-button-next:hover {
   color: $secondary-text;
 }
 .divider .container .row h1 {

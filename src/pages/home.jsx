@@ -46,9 +46,10 @@ class Home extends Component {
         </div>
         {/* Swiper */}
         <Swiper
-          modules={[EffectFade, Pagination, Navigation]}
+          modules={[EffectFade, Pagination, Navigation, Autoplay]}
           effect="fade"
-          speed={1300}
+          autoplay={(true, { disableOnInteraction: false })}
+          speed={800}
           slidesPerView={1}
           navigation={true}
           pagination={{ clickable: true }}
@@ -69,9 +70,7 @@ class Home extends Component {
           </SwiperSlide>
         </Swiper>
         {/* Swiper */}
-        <section id="home" className="banner_wrapper p-0">
-          
-        </section>
+        <section id="home" className="banner_wrapper p-0"></section>
 
         {/*
         <section id="home" className="banner_wrapper p-0">

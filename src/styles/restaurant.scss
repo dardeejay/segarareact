@@ -28,15 +28,27 @@ $text-grey: #e4e4e4;
   background-position: center;
   background-repeat: no-repeat;
   height: 35.625rem;
+  padding: 0;
+  margin: 0;
 }
-
+.blur_container {
+  top: 19%;
+  height: 25rem;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  border: 1px solid black;
+  filter: blur(1.7px);
+  -webkit-filter: blur(1.7px);
+}
 .resto_ts_wrapper .row {
-  background-color: rgba(81, 43, 29, 0.7);
   height: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .resto_ts_wrapper .row .col-sm-4 {
-  border: 1px solid black;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
