@@ -18,27 +18,27 @@ function Menu() {
           className="row justify-content-center m-0"
           style={{ width: "100%" }}
         >
-          <div className="col-sm-5 col-12">
+          <div className="col-md-5 col-12">
             <img src={menu1} alt="" className="img-fluid" />
           </div>
           <div class="w-100"></div>
-          <div className="col-sm-5 col-12">
+          <div className="col-md-5 col-12">
             <img src={menu2} alt="" className="img-fluid" />
           </div>
           <div class="w-100"></div>
-          <div className="col-sm-5 col-12">
+          <div className="col-md-5 col-12">
             <img src={menu3} alt="" className="img-fluid" />
           </div>
           <div class="w-100"></div>
-          <div className="col-sm-5 col-12">
+          <div className="col-md-5 col-12">
             <img src={menu4} alt="" className="img-fluid" />
           </div>
           <div class="w-100"></div>
-          <div className="col-sm-5 col-12">
+          <div className="col-md-5 col-12">
             <img src={menu5} alt="" className="img-fluid" />
           </div>
           <div class="w-100"></div>
-          <div className="col-sm-5 col-12">
+          <div className="col-md-5 col-12">
             <img src={menu6} alt="" className="img-fluid" />
           </div>
         </div>
