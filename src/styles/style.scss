@@ -224,6 +224,9 @@ video {
   align-items: center;
   padding-top: 40px;
 }
+.HomeSwiper-container{
+  padding-bottom: 25px;
+}
 .HomeSwiper {
   height: 43.625rem;
 }
@@ -253,6 +256,53 @@ video {
 .divider .container .row h1 {
   color: $primary-text;
 }
+/*8 Gallery Section */
+.gallery-item {
+  box-shadow: $bg-black;
+  overflow: hidden;
+  position: relative;
+}
+.gallery-item:hover:after {
+  top: 0;
+  opacity: 1;
+}
+.gallery-item:hover:before {
+  left: 50%;
+  opacity: 1;
+}
+.gallery-item .gallery-item-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.gallery-item:hover .gallery-item-content {
+  opacity: 1;
+}
+.gallery-item .gallery-item-content:before,
+.gallery-item .gallery-item-content:after {
+  top: 0;
+  left: 0%;
+  z-index: -1;
+}
+.gallery-item:hover .gallery-item-content:before {
+  top: 50%;
+  opacity: 1;
+}
+.gallery-item .gallery-item-content:after {
+  top: 50%;
+}
+.gallery-item:hover .gallery-item-content:after {
+  left: 0;
+  opacity: 1;
+}
+
 
 @media (max-width: 1199px) {
   /* header */
