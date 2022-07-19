@@ -6,7 +6,7 @@ function NavBar() {
   return (
     <div className="header-wrapper">
       <nav className="navbar navbar-expand-lg">
-        <div className="container">
+        <div className="container-fluid">
           <a className="navbar-brand" href="/">
             <img src={logo1} className="img-fluid segaralogo" alt="icon" />
           </a>
@@ -54,12 +54,7 @@ function NavBar() {
                   Restaurant
                 </NavLink>
               </li>
-              <li
-                className="nav-item"
-                style={{
-                  fontFamily: "Dancing Script",
-                }}
-              >
+              <li className="nav-item">
                 <NavLink
                   className="nav-link"
                   activeClassName="nav-link active"

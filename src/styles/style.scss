@@ -24,6 +24,9 @@ $text-grey: #e4e4e4;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 body {
@@ -116,6 +119,7 @@ p {
   height: 7rem;
   padding: 0;
 }
+
 .navbar-toggler {
   border: 0;
   color: $primary-text !important;
@@ -128,9 +132,10 @@ p {
   margin: 0 0.525rem;
 }
 .nav-link {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: 500;
   color: $primary-text !important;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: inline-block;
 }
 

@@ -6,7 +6,7 @@ function App() {
   return (
     <Router>
       <NavBar />
-        <AnimatedPage/>
+      <AnimatedPage/>
       <Messenger />
     </Router>
   );

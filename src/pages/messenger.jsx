@@ -6,9 +6,9 @@ function Messenger() {
   return (
     <div>
       <MessengerCustomerChat
-        pageId="103455685784435
-        "
+        pageId="103455685784435"
         appId="787123462284202"
+        minimized="false"
       />
       ,
     </div>
