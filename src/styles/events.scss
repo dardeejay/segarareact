@@ -124,6 +124,25 @@ $text-grey: #e4e4e4;
 .events_container .container-fluid a {
   margin: 0;
 }
+.main-btn-events {
+  font-size: 1rem;
+  font-weight: 500;
+  color: $text-white;
+  text-transform: uppercase;
+  border: 0.1rem solid $bg-white;
+  padding: 0.375rem 1.875rem;
+  border-radius: 1rem;
+  line-height: 1.75rem;
+  display: inline-block;
+  transition: all 0.3s ease-out 0s;
+  margin: 50px 20px 20px;
+  text-decoration: none;
+}
+.main-btn-events:hover {
+  background-color: $bg-white;
+  border-color: $bg-white;
+  color: $primary-color;
+}
 /*special events section*/
 
 .seasonal_event1 {
@@ -131,6 +150,11 @@ $text-grey: #e4e4e4;
 .seasonal_event1 .sec1_text {
   margin-top: 8%;
   margin-left: 4%;
+  border-left: 1px solid $primary-color;
+  border-bottom: 1px solid $primary-color;
+  margin-bottom: 8%;
+  --webkit-box-shadow: 0 0.5rem 0.375rem -0.375rem RGB(0 0 0 / 40%);
+  box-shadow: 0 0.5rem 0.375rem -0.375rem RGB(0 0 0 / 40%);
 }
 
 .seasonal_event1 .sec1_text p {
@@ -164,6 +188,11 @@ $text-grey: #e4e4e4;
   text-align: right;
   margin-right: 4%;
   margin-top: 8%;
+  border-right: 1px solid $primary-color;
+  border-bottom: 1px solid $primary-color;
+  margin-bottom: 8%;
+  --webkit-box-shadow: 0 0.5rem 0.375rem -0.375rem RGB(0 0 0 / 40%);
+  box-shadow: 0 0.5rem 0.375rem -0.375rem RGB(0 0 0 / 40%);
 }
 
 .seasonal_event2 .sec2_text h1 {

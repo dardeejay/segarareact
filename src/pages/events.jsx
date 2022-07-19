@@ -62,7 +62,7 @@ class Events extends Component {
                     us!
                   </h3>
                 </div>
-                <a className="main-btn eventInquireButton" href="/">
+                <a className="main-btn-events eventInquireButton" href="/">
                   Inquire
                 </a>
               </div>
@@ -73,7 +73,7 @@ class Events extends Component {
                   <h2>BIRTHDAYS</h2>
                   <h3>Grateful for another year with you at Segara Hotels!</h3>
                 </div>
-                <a className="main-btn eventInquireButton" href="/">
+                <a className="main-btn-events eventInquireButton" href="/">
                   Inquire
                 </a>
               </div>
@@ -87,7 +87,7 @@ class Events extends Component {
                     together!
                   </h3>
                 </div>
-                <a className="main-btn eventInquireButton" href="/">
+                <a className="main-btn-events eventInquireButton" href="/">
                   Inquire
                 </a>
               </div>
@@ -111,7 +111,7 @@ class Events extends Component {
                   </p>
                 </div>
                 <div className="col-md-12 px-5">
-                  <a className="main-btn eventInquireButton" href="/">
+                  <a className="main-btn-rooms eventInquireButton" href="/">
                     Inquire
                   </a>
                 </div>
@@ -186,7 +186,7 @@ class Events extends Component {
                   </p>
                 </div>
                 <div className="col-md-12 px-5">
-                  <a className="main-btn eventInquireButton" href="/">
+                  <a className="main-btn-rooms eventInquireButton" href="/">
                     Inquire
                   </a>
                 </div>
