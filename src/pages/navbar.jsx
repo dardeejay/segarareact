@@ -69,14 +69,14 @@ function NavBar() {
                 </NavLink>
               </li>
               {/* <li className="nav-item">
-                <NavLink
-                  className="nav-link"
-                  activeClassName="nav-link active"
-                  to="/about-us"
-                >
-                  About Us
-                </NavLink>
-              </li> */}
+                  <NavLink
+                    className="nav-link"
+                    activeClassName="nav-link active"
+                    to="/about-us"
+                  >
+                    About Us
+                  </NavLink>
+                </li> */}
             </ul>
           </div>
         </div>
