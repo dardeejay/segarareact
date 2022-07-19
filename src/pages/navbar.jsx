@@ -88,7 +88,6 @@ function NavBar() {
         pageId="103455685784435
         "
         appId="787123462284202"
-        htmlRef="<REF_STRING>"
       />
       ,
     </div>
