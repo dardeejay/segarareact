@@ -97,7 +97,7 @@ class Events extends Component {
         {/*Seasonal Events*/}
         <div className="seasonal_event1 container-fluid">
           <div className="seasonal_event1_container row justify-content-between">
-            <div className="col-md-6 sec1_text">
+            <div className="col-md-5 sec1_text">
               <div className="row gy-0">
                 <div className="col-md-12 p-5">
                   <h1>Luxury Dine &amp; Cruise</h1>
@@ -166,14 +166,14 @@ class Events extends Component {
         {/*Seasonal events2*/}
         <div className="seasonal_event2 container-fluid">
           <div className="seasonal_event1_container row justify-content-between">
-            <div className="col-md-5 sec2_img">
+            <div className="col-md-6 sec2_img">
               <img
                 src={event2Pic1}
                 alt="anniversary package"
                 className="img-fluid event2im"
               />
             </div>
-            <div className="col-md-6 sec2_text">
+            <div className="col-md-5 sec2_text">
               <div className="row gy-0">
                 <div className="col-md-12 p-5">
                   <h1>Anniversary Celebration Package</h1>

@@ -8,6 +8,7 @@ $bg-black: #000;
 $primary-font: "Poppins", sans-serif;
 $secondary-font: "Oswald", sans-serif;
 $cursive-font: "Dancing Script", cursive;
+$tertiary-font: "Abel", sans-serif;
 $primary-text: #512b1d;
 $secondary-text: #b34c00;
 $text-white: #fff;
@@ -128,20 +129,21 @@ $text-grey: #e4e4e4;
 .seasonal_event1 {
 }
 .seasonal_event1 .sec1_text {
-  padding-left: 30px;
-  margin-top: 40px;
+  margin-top: 8%;
+  margin-left: 4%;
 }
+
 .seasonal_event1 .sec1_text p {
-  font-family: $primary-font;
-  font-weight: 700;
-  font-size: 1.6rem;
-  line-height: 40px;
+  font-family: $tertiary-font;
+  font-weight: 200;
+  font-size: 1.3rem;
+  line-height: 1.5;
 }
 .seasonal_event1 .sec1_text h1 {
   color: $primary-text;
   text-transform: none;
   padding-bottom: 10px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid $primary-color;
 }
 .seasonal_event1 .sec1_img {
   padding: 0;
@@ -155,41 +157,43 @@ $text-grey: #e4e4e4;
   padding: 0;
 }
 
-.seasonal_event1 .sec1_img .event1img {
-  --webkit-box-shadow: 0 0.5rem 0.375rem -0.375rem RGB(0 0 0 / 40%);
-  box-shadow: 0 0.5rem 0.375rem -0.375rem RGB(0 0 0 / 40%);
-}
-
 .seasonal_event2 {
-  margin-top: 75px;
-  padding: 0;
 }
 
 .seasonal_event2 .sec2_text {
-  padding-right: 30px;
   text-align: right;
+  margin-right: 4%;
+  margin-top: 8%;
 }
 
 .seasonal_event2 .sec2_text h1 {
   color: $primary-text;
   text-transform: none;
   padding-bottom: 10px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid $primary-color;
 }
 
 .seasonal_event2 .sec2_text p {
-  font-family: $primary-font;
-  font-weight: 700;
-  font-size: 1.6rem;
-  line-height: 40px;
+  font-family: $tertiary-font;
+  font-weight: 200;
+  font-size: 1.3rem;
+  line-height: 1.5;
 }
 
 .seasonal_event2 .sec2_img {
-  width: 40%px;
-  padding: 50px;
-}
-
-.seasonal_event2 .sec2_img .event2img {
+  padding: 0;
   --webkit-box-shadow: 0 0.5rem 0.375rem -0.375rem RGB(0 0 0 / 40%);
   box-shadow: 0 0.5rem 0.375rem -0.375rem RGB(0 0 0 / 40%);
+}
+
+@media (max-width: 991px) {
+  .seasonal_event1 .sec1_text {
+    margin: 0;
+  }
+  .seasonal_event2 .sec2_text {
+    margin: 0;
+  }
+  .seasonal_event2 {
+    margin-top: 10%;
+  }
 }
