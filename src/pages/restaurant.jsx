@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import { motion } from "framer-motion";
 import "../styles/restaurant.scss";
-import restoLogo from "../assets/restaurant/restologowhite.png";
+import restoLogo from "../assets/restaurant/restologonewwhite.png";
+import restoDetail1 from "../assets/restaurant/restodetail1.jpg";
+
 class Restaurant extends Component {
   state = {};
   render() {
@@ -12,24 +14,57 @@ class Restaurant extends Component {
         exit={{ opacity: 0 }}
       >
         {/* RestaurantTitle */}
-        <div className="container-fluid resto_ts_wrapper">
-          <div className="blur_container"></div>
-          <div className="row justify-content-center ">
-            <div className="col-md-4 py-5 text-center resto_ts_content">
+        <div className="container-fluid restoBanner">
+          <div className="row justify-content-center">
+            <div className="col-md-5 text-center restoBannerColumn">
               <img
                 src={restoLogo}
-                alt="AsianSpicesLogo"
-                className="img-fluid"
+                alt="restoLogo"
+                className="restoBannerLogo img-fluid "
               />
-              <a className="main-btn menu-btn" href="/restaurant/menu">
+              <a href="/restaurant/menu" className="main-btn-events menu_btn">
                 View Our Menu
               </a>
             </div>
           </div>
         </div>
-        <div className="resto-divider">
-          <div className="container-fluid">
-            <p>Experience</p>
+        <div className="container-fluid text-center my-5 divider-container">
+          <p>
+            Relish in the diversity of Asian cuisine as your palate travels from
+            Thailand, to Malaysia, to Indonesia and the Philippines, all found
+            in one #SegaraSpices
+          </p>
+        </div>
+        <div className="container resto-detail1-container">
+          <div className="row resto-detail1-content justify-content-between">
+            <div className="col-md-4 resto-detail1-img">
+              <img src={restoDetail1} alt="" className="img-fluid" />
+            </div>
+            <div className="col-md-5 resto-detail1-text my-2 ">
+              <h1>Segara Hotels Breakfast</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Consequuntur magnam sunt ipsam in, provident nisi dolores nemo
+                itaque laborum nam qui error quos mollitia? Quasi fuga fugiat
+                provident esse neque.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="container resto-detail2-container">
+          <div className="row resto-detail2-content justify-content-between">
+            <div className="col-md-5 resto-detail2-text my-2 ">
+              <h1>Segara Hotels Breakfast</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Consequuntur magnam sunt ipsam in, provident nisi dolores nemo
+                itaque laborum nam qui error quos mollitia? Quasi fuga fugiat
+                provident esse neque.
+              </p>
+            </div>
+            <div className="col-md-4 resto-detail2-img">
+              <img src={restoDetail1} alt="" className="img-fluid" />
+            </div>
           </div>
         </div>
       </motion.div>
