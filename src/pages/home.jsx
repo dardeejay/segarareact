@@ -25,6 +25,7 @@ import HomeGallery6 from "../assets/HomeGallery/6.jpg";
 import AboutSegara1 from "../assets/Home Page/about_banner.jpg";
 import AboutSegara2 from "../assets/Home Page/about_banner2.jpg";
 import SegaraLogo from "../assets/SegaraHotels.png";
+import { Row } from "react-bootstrap";
 
 class Home extends Component {
   state = {};
@@ -112,25 +113,25 @@ class Home extends Component {
                   <img src={HomeGallery1Hover} className="img-fluid w-100" />
                 </div>
               </div>
-              <div class="col-lg-3 col-sm-3 gallery-item">
+              <div class="col-lg-3 col-sm-3 gallery-item optionalcontent">
                 <img src={HomeGallery2} className="img-fluid w-100" />
                 <div class="gallery-item-content">
                   <img src={HomeGallery2Hover} className="img-fluid w-100" />
                 </div>
               </div>
-              <div class="col-lg-3 col-sm-3 gallery-item">
+              <div class="col-lg-3 col-sm-3 gallery-item optionalcontent">
                 <img src={HomeGallery3} className="img-fluid w-100" />
                 <div class="gallery-item-content">
                   <img src={HomeGallery3Hover} className="img-fluid w-100" />
                 </div>
               </div>
-              <div class="col-lg-3 col-sm-3 gallery-item">
+              <div class="col-lg-3 col-sm-3 gallery-item optionalcontent">
                 <img src={HomeGallery4} className="img-fluid w-100" />
                 <div class="gallery-item-content">
                   <img src={HomeGallery4Hover} className="img-fluid w-100" />
                 </div>
               </div>
-              <div class="col-sm-6 gallery-item">
+              <div class="col-sm-6 gallery-item optionalcontent">
                 <img src={HomeGallery5} className="img-fluid w-100" />
                 <div class="gallery-item-content"> </div>
               </div>
@@ -145,39 +146,42 @@ class Home extends Component {
         <div className="divider">
           <div className="container">
             <div className="row">
-              <div className="col-sm-12 text-center mb-5">
-                <h1>Know More About Segara Hotels</h1>
+              <div className="col-sm-12 text-center">
+                <h1>Know More About Us</h1>
                 <h5>―</h5>
               </div>
             </div>
           </div>
         </div>
         {/*  About Segara */}
-        <div className="container container-fluid">
+        <div className="container-fluid">
           <div className="row gy-1 flex-lg-row align-items-center justify-content-center">
-            <div className="col-md-4">
-              <img src={AboutSegara1} className="img-fluid w-100" />
+            <div className="col-sm-4">
+              <img
+                src={AboutSegara1}
+                className="img-fluid w-100 optionalcontent"
+              />
             </div>
-            <div className="col-md-4 text-center aboutSegaraText">
-              <p>
-                It is our sole purpose at Segara Villas to make your visit an
-                unforgettable one. Our professional and gracious staff will
-                certainly make you feel like you've found a home away from home
-              </p>
-              <h3>SEGARA HOTELS</h3>
+            <div className="col-sm-4 text-center aboutSegaraText mb-4">
+                  <p>
+                    It is our sole purpose at Segara Villas to make your visit an
+                    unforgettable one. Our professional and gracious staff will
+                    certainly make you feel like you've found a home away from home
+                  </p>
+                <h3 className="">SEGARA HOTELS</h3>
             </div>
-            <div className="col-md-4">
+            <div className="col-sm-4">
               <img src={AboutSegara2} className="img-fluid w-100" />
             </div>
           </div>
         </div>
-        {/*  */}
+        {/* About Segara 2 */}
         <section className="about_wrapper">
           <div class="container">
             <div class="row flex-lg-row flex-column-reverse align-items-center justify-content-center">
               <div class="col-lg-6 text-center text-lg-start">
                 <p>
-                  Segara Villas was created to offer luxurious accommodations
+                  Segara Hotels was created to offer luxurious accommodations
                   for special moments. With our hands-on approach to
                   hospitality, we aim to give every guest a personalized and
                   memorable stay.
@@ -193,23 +197,27 @@ class Home extends Component {
         <div className="divider">
           <div className="container">
             <div className="row">
-              <div className="col-sm-12 text-center mb-5">
+              <div className="col-sm-12 text-center">
                 <h1>How to get there</h1>
               </div>
             </div>
           </div>
         </div>
         {/* Google Map */}
-        <div className="MapContainer">
-          <iframe
-            width="100%"
-            height="380"
-            src="https://maps.google.com/maps?q=segara%20villas&t=&z=15&ie=UTF8&iwloc=&output=embed"
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
-          ></iframe>
+        <div className="container pb-10">
+          <div className="row flex-lg-row align-items-center justify-content-center">
+            <div className="MapContainer text-center">
+              <iframe
+                width="100%"
+                height="280"
+                src="https://maps.google.com/maps?q=segara%20villas&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe>
+            </div>
+          </div>
         </div>
         {/*
         <section id="home" className="banner_wrapper p-0">
