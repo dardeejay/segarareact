@@ -27,6 +27,11 @@ class Restaurant extends Component {
             </div>
           </div>
         </div>
+        <div className="resto-divider">
+          <div className="container-fluid">
+            <p>Experience</p>
+          </div>
+        </div>
       </motion.div>
     );
   }
