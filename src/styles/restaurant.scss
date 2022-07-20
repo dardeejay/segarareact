@@ -40,13 +40,13 @@ $text-grey: #e4e4e4;
   font-family: $tertiary-font;
   font-size: 1.2rem;
 }
-//detail containers
+//detail1
 .resto-detail1-container {
   padding-bottom: 3%;
+  border-bottom: 1px solid rgba(81, 43, 29, 0.3);
 }
-
-.resto-detail1-container .resto-detail1-content .resto-detail1-img {
-  margin-left: 10%;
+.resto-detail1-container .resto-detail1-content .resto-detail1-text {
+  margin-right: 10%;
 }
 .resto-detail1-container .resto-detail1-content .resto-detail1-text p {
   font-family: $tertiary-font;
@@ -55,16 +55,63 @@ $text-grey: #e4e4e4;
 .resto-detail1-container .resto-detail1-content .resto-detail1-text h1 {
   color: $primary-text;
   margin-bottom: 10%;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid $primary-color;
   width: 70%;
 }
-.resto-detail1-container .resto-detail1-content .resto-detail1-text {
+.resto-detail1-container .resto-detail1-content .resto-detail1-img {
+  margin-left: 10%;
+}
+//details2
+.resto-detail2-container {
+  margin-top: 5%;
+  padding-bottom: 3%;
+  border-bottom: 1px solid rgba(81, 43, 29, 0.3);
+}
+
+.resto-detail2-container .resto-detail2-content .resto-detail2-text {
+  margin-left: 10%;
+}
+.resto-detail2-container .resto-detail2-content .resto-detail2-text h1 {
+  color: $primary-text;
+  width: 70%;
+  margin-bottom: 10%;
+  border-bottom: 1px solid $primary-color;
+}
+.resto-detail2-container .resto-detail2-content .resto-detail2-text p {
+  font-family: $tertiary-font;
+  font-size: 1.1rem;
+}
+.resto-detail2-container .resto-detail2-content .resto-detail2-img {
   margin-right: 10%;
 }
+//detail 3
+.resto-detail3-container {
+  margin-top: 5%;
+  padding-bottom: 3%;
+  border-bottom: 1px solid rgba(81, 43, 29, 0.3);
+}
+.resto-detail3-container .resto-detail3-content .resto-detail3-text {
+  margin-right: 10%;
+}
+.resto-detail3-container .resto-detail3-content .resto-detail3-text p {
+  font-family: $tertiary-font;
+  font-size: 1.1rem;
+}
+.resto-detail3-container .resto-detail3-content .resto-detail3-text h1 {
+  color: $primary-text;
+  margin-bottom: 10%;
+  border-bottom: 1px solid $primary-color;
+  width: 70%;
+}
+.resto-detail3-container .resto-detail3-content .resto-detail3-img {
+  margin-left: 10%;
+}
+//responsive style
 @media (max-width: 768px) {
   .restoBanner .row .restoBannerColumn {
     margin-top: 25%;
   }
+  //detail1 responsive
   .resto-detail1-container .resto-detail1-content {
     display: flex;
     justify-content: center;
@@ -81,6 +128,42 @@ $text-grey: #e4e4e4;
     padding: 0 10%;
   }
   .resto-detail1-container .resto-detail1-content .resto-detail1-text h1 {
+    width: 60%;
+  }
+  //detail2 responsive
+  .resto-detail2-container .resto-detail2-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .resto-detail2-container .resto-detail2-content .resto-detail2-img {
+    margin-bottom: 5%;
+    margin-left: 10%;
+    width: 70%;
+    height: 70%;
+  }
+  .resto-detail2-container .resto-detail2-content .resto-detail2-text {
+    padding: 0 10%;
+    margin: 0;
+  }
+  .resto-detail2-container .resto-detail2-content .resto-detail2-text h1 {
+    width: 60%;
+  }
+  //detail3 responsive
+  .resto-detail3-container .resto-detail3-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .resto-detail3-container .resto-detail3-content .resto-detail3-img {
+    display: none;
+  }
+  .resto-detail3-container .resto-detail3-content .resto-detail3-text {
+    padding: 0 10%;
+  }
+  .resto-detail3-container .resto-detail3-content .resto-detail3-text h1 {
     width: 60%;
   }
 }

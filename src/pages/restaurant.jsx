@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import "../styles/restaurant.scss";
 import restoLogo from "../assets/restaurant/restologonewwhite.png";
 import restoDetail1 from "../assets/restaurant/restodetail1.jpg";
-
+import restoDetail2 from "../assets/restaurant/restodetail1.1.jpg";
 class Restaurant extends Component {
   state = {};
   render() {
@@ -35,6 +35,7 @@ class Restaurant extends Component {
             in one #SegaraSpices
           </p>
         </div>
+        {/* RestaurantDetail1 */}
         <div className="container resto-detail1-container">
           <div className="row resto-detail1-content justify-content-between">
             <div className="col-md-4 resto-detail1-img">
@@ -51,6 +52,7 @@ class Restaurant extends Component {
             </div>
           </div>
         </div>
+        {/* RestaurantDetail2 */}
         <div className="container resto-detail2-container">
           <div className="row resto-detail2-content justify-content-between">
             <div className="col-md-5 resto-detail2-text my-2 ">
@@ -63,7 +65,24 @@ class Restaurant extends Component {
               </p>
             </div>
             <div className="col-md-4 resto-detail2-img">
+              <img src={restoDetail2} alt="" className="img-fluid" />
+            </div>
+          </div>
+        </div>
+        {/* RestaurantDetail3 */}
+        <div className="container resto-detail3-container">
+          <div className="row resto-detail3-content justify-content-between">
+            <div className="col-md-4 resto-detail3-img">
               <img src={restoDetail1} alt="" className="img-fluid" />
+            </div>
+            <div className="col-md-5 resto-detail3-text my-2 ">
+              <h1>Segara Hotels Breakfast</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Consequuntur magnam sunt ipsam in, provident nisi dolores nemo
+                itaque laborum nam qui error quos mollitia? Quasi fuga fugiat
+                provident esse neque.
+              </p>
             </div>
           </div>
         </div>
