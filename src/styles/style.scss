@@ -90,9 +90,10 @@ h6 {
   font-family: $secondary-font;
 }
 p {
-  font-size: 1rem;
+  font-size: 1.345rem;
   color: $text-black !important;
   line-height: 1.625rem;
+  font-family: $secondary-font;
 }
 .section-title:after {
   content: "";
@@ -262,7 +263,7 @@ video {
 .divider .container .row h1 {
   color: $primary-text;
 }
-/*8 Gallery Section */
+/* Gallery Section */
 .gallery-item {
   box-shadow: $bg-black;
   overflow: hidden;
@@ -307,6 +308,23 @@ video {
 .gallery-item:hover .gallery-item-content:after {
   left: 0;
   opacity: 1;
+}
+// About segara Section
+.aboutSegaraText{
+
+}
+.about_wrapper {
+  padding-top: 5.375rem;
+}
+.about_wrapper p{
+  line-height: 30px;
+  text-align: center;
+  text-justify: inter-word;
+}
+//Google Map
+.MapContainer {
+  width: 100%;
+  height: 200px;
 }
 
 @media (max-width: 1199px) {
