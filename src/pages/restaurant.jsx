@@ -16,7 +16,7 @@ class Restaurant extends Component {
         {/* RestaurantTitle */}
         <div className="container-fluid restoBanner">
           <div className="row justify-content-center">
-            <div className="col-md-5 text-center restoBannerColumn">
+            <div className="col-md-7 col-sm-6 col-10 col-lg-5 text-center restoBannerColumn">
               <img
                 src={restoLogo}
                 alt="restoLogo"

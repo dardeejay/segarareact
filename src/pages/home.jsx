@@ -71,16 +71,16 @@ class Home extends Component {
             className="HomeSwiper"
           >
             <SwiperSlide className="HomeSwiperSlide">
-              <img src={HomeSlide1} alt="" className="" />
+              <img src={HomeSlide1} alt="slider1" className="" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={HomeSlide2} alt="" className="" />
+              <img src={HomeSlide2} alt="slider2" className="" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={HomeSlide3} alt="" className="" />
+              <img src={HomeSlide3} alt="slider3" className="" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={HomeSlide4} alt="" className="" />
+              <img src={HomeSlide4} alt="slider4" className="" />
             </SwiperSlide>
           </Swiper>
         </div>
