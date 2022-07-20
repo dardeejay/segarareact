@@ -56,8 +56,11 @@ $text-grey: #e4e4e4;
   font-size: 3.75rem
 }
 //Rooms Main Page
+.RoomsandRatesMain{
+	padding: 20px;
+}
 .RoomsandRatesMain_container{
-
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .RoomsandRatesMain .sec1_text {
   padding-left: 30px;
@@ -73,8 +76,9 @@ $text-grey: #e4e4e4;
   color: $primary-text;
 }
 .Roomsimg{
-    width: 100%;
-    height: 100%;
+    padding-top: 50px;
+    width: 89%;
+    height: 89%;
 }
 .main-btn-rooms {
     font-size: 1rem;

@@ -13,11 +13,18 @@ import HomeSlide2 from "../assets/HomeSwipe/2.jpg";
 import HomeSlide3 from "../assets/HomeSwipe/3.jpg";
 import HomeSlide4 from "../assets/HomeSwipe/4.jpg";
 import HomeGallery1 from "../assets/HomeGallery/1.jpg";
+import HomeGallery1Hover from "../assets/HomeGallery/1Hover.jpg";
 import HomeGallery2 from "../assets/HomeGallery/2.jpg";
+import HomeGallery2Hover from "../assets/HomeGallery/2Hover.jpg";
 import HomeGallery3 from "../assets/HomeGallery/3.jpg";
+import HomeGallery3Hover from "../assets/HomeGallery/3Hover.jpg";
 import HomeGallery4 from "../assets/HomeGallery/4.jpg";
+import HomeGallery4Hover from "../assets/HomeGallery/4Hover.jpg";
 import HomeGallery5 from "../assets/HomeGallery/5.jpg";
 import HomeGallery6 from "../assets/HomeGallery/6.jpg";
+import AboutSegara1 from "../assets/Home Page/about_banner.jpg";
+import AboutSegara2 from "../assets/Home Page/about_banner2.jpg";
+import SegaraLogo from "../assets/SegaraHotels.png";
 
 class Home extends Component {
   state = {};
@@ -100,34 +107,36 @@ class Home extends Component {
           <div class="container">
             <div class="row g-0">
               <div class="col-lg-3 col-sm-3 gallery-item">
-                <img src={HomeGallery1} class="img-fluid w-100" />
+                <img src={HomeGallery1} className="img-fluid w-100" />
                 <div class="gallery-item-content">
-                  <img src={HomeGallery2} class="img-fluid w-100" />
+                  <img src={HomeGallery1Hover} className="img-fluid w-100" />
                 </div>
               </div>
               <div class="col-lg-3 col-sm-3 gallery-item">
-                <img src={HomeGallery2} class="img-fluid w-100" />
+                <img src={HomeGallery2} className="img-fluid w-100" />
                 <div class="gallery-item-content">
-                  <img src={HomeGallery4} class="img-fluid w-100" />
+                  <img src={HomeGallery2Hover} className="img-fluid w-100" />
                 </div>
               </div>
               <div class="col-lg-3 col-sm-3 gallery-item">
-                <img src={HomeGallery3} class="img-fluid w-100" />
-                <div class="gallery-item-content"></div>
+                <img src={HomeGallery3} className="img-fluid w-100" />
+                <div class="gallery-item-content">
+                  <img src={HomeGallery3Hover} className="img-fluid w-100" />
+                </div>
               </div>
               <div class="col-lg-3 col-sm-3 gallery-item">
-                <img src={HomeGallery4} class="img-fluid w-100" />
-                <div class="gallery-item-content"></div>
+                <img src={HomeGallery4} className="img-fluid w-100" />
+                <div class="gallery-item-content">
+                  <img src={HomeGallery4Hover} className="img-fluid w-100" />
+                </div>
               </div>
               <div class="col-sm-6 gallery-item">
-                <img src={HomeGallery3} class="img-fluid w-100" />
+                <img src={HomeGallery5} className="img-fluid w-100" />
                 <div class="gallery-item-content"> </div>
               </div>
               <div class="col-sm-6 gallery-item">
-                <img src={HomeGallery3} class="img-fluid w-100" />
-                <div class="gallery-item-content">
-                  <img src={HomeGallery3} class="img-fluid w-100" />
-                </div>
+                <img src={HomeGallery6} className="img-fluid w-100" />
+                <div class="gallery-item-content"></div>
               </div>
             </div>
           </div>
@@ -142,6 +151,65 @@ class Home extends Component {
               </div>
             </div>
           </div>
+        </div>
+        {/*  About Segara */}
+        <div className="container container-fluid">
+          <div className="row gy-1 flex-lg-row align-items-center justify-content-center">
+            <div className="col-md-4">
+              <img src={AboutSegara1} className="img-fluid w-100" />
+            </div>
+            <div className="col-md-4 text-center aboutSegaraText">
+              <p>
+                It is our sole purpose at Segara Villas to make your visit an
+                unforgettable one. Our professional and gracious staff will
+                certainly make you feel like you've found a home away from home
+              </p>
+              <h3>SEGARA HOTELS</h3>
+            </div>
+            <div className="col-md-4">
+              <img src={AboutSegara2} className="img-fluid w-100" />
+            </div>
+          </div>
+        </div>
+        {/*  */}
+        <section className="about_wrapper">
+          <div class="container">
+            <div class="row flex-lg-row flex-column-reverse align-items-center justify-content-center">
+              <div class="col-lg-6 text-center text-lg-start">
+                <p>
+                  Segara Villas was created to offer luxurious accommodations
+                  for special moments. With our hands-on approach to
+                  hospitality, we aim to give every guest a personalized and
+                  memorable stay.
+                </p>
+              </div>
+              <div class="col-lg-6 mb-4 mb-lg-0 ps-lg-4 text-center">
+                <img src={SegaraLogo} className="img-fluid w-50" />
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* Divider */}
+        <div className="divider">
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-12 text-center mb-5">
+                <h1>How to get there</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Google Map */}
+        <div className="MapContainer">
+          <iframe
+            width="100%"
+            height="380"
+            src="https://maps.google.com/maps?q=segara%20villas&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe>
         </div>
         {/*
         <section id="home" className="banner_wrapper p-0">
