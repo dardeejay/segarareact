@@ -6,7 +6,7 @@ import Restaurant from "./restaurant";
 import Events from "./events";
 import AboutUs from "./about-us";
 import ErrorPage from "./error";
-import Menu from "./menu";
+import Menu from "./restaurant/menu";
 import { AnimatePresence } from "framer-motion";
 
 function AnimatedPage() {
