@@ -89,7 +89,7 @@ class Home extends Component {
         <div className="divider">
           <div className="container">
             <div className="row">
-              <div className="col-sm-12 text-center mb-5">
+              <div className="col-sm-12 text-center mb-3">
                 <h1>Asian Spices Bar and Restaurant</h1>
                 <h5>―</h5>
                 <p>
@@ -106,14 +106,14 @@ class Home extends Component {
         {/* Resto */}
         <section id="gallery" class="gallery_wrapper">
           <div class="container">
-            <div class="row g-0">
-              <div class="col-lg-3 col-sm-3 gallery-item">
+            <div class="row g-2">
+              <div class="col-lg-3 col-sm-2 gallery-item">
                 <img src={HomeGallery1} className="img-fluid w-100" />
                 <div class="gallery-item-content">
                   <img src={HomeGallery1Hover} className="img-fluid w-100" />
                 </div>
               </div>
-              <div class="col-lg-3 col-sm-3 gallery-item optionalcontent">
+              <div class="col-lg-3 col-sm-3 gallery-item">
                 <img src={HomeGallery2} className="img-fluid w-100" />
                 <div class="gallery-item-content">
                   <img src={HomeGallery2Hover} className="img-fluid w-100" />
@@ -131,30 +131,22 @@ class Home extends Component {
                   <img src={HomeGallery4Hover} className="img-fluid w-100" />
                 </div>
               </div>
-              <div class="col-sm-6 gallery-item optionalcontent">
-                <img src={HomeGallery5} className="img-fluid w-100" />
-                <div class="gallery-item-content"> </div>
-              </div>
-              <div class="col-sm-6 gallery-item">
-                <img src={HomeGallery6} className="img-fluid w-100" />
-                <div class="gallery-item-content"></div>
-              </div>
             </div>
           </div>
         </section>
         {/* Divider */}
-        <div className="divider">
+        <div className="divider2">
           <div className="container">
             <div className="row">
               <div className="col-sm-12 text-center">
                 <h1>Know More About Us</h1>
-                <h5>―</h5>
+                <h5></h5>
               </div>
             </div>
           </div>
         </div>
         {/*  About Segara */}
-        <div className="container-fluid">
+        <div className="container-fluid AboutSegara">
           <div className="row gy-1 flex-lg-row align-items-center justify-content-center">
             <div className="col-sm-4">
               <img
@@ -162,9 +154,9 @@ class Home extends Component {
                 className="img-fluid w-100 optionalcontent"
               />
             </div>
-            <div className="col-sm-4 text-center aboutSegaraText mb-4">
+            <div className="col-sm-4 text-center aboutSegaraText mb-2 optionalcontent">
                   <p>
-                    It is our sole purpose at Segara Villas to make your visit an
+                    It is our sole purpose at Segara Hotels to make your visit an
                     unforgettable one. Our professional and gracious staff will
                     certainly make you feel like you've found a home away from home
                   </p>
@@ -194,7 +186,7 @@ class Home extends Component {
           </div>
         </section>
         {/* Divider */}
-        <div className="divider">
+        <div className="divider2">
           <div className="container">
             <div className="row">
               <div className="col-sm-12 text-center">

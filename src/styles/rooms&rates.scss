@@ -62,17 +62,16 @@ $text-grey: #e4e4e4;
 .RoomsandRatesMain_container{
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-.RoomsandRatesMain .sec1_text {
-  padding-left: 30px;
+.RoomsandRatesMain {
   margin-top: 40px;
 }
-.RoomsandRatesMain .sec1_text p {
+.RoomsandRatesMain p {
   font-family: $primary-font;
   font-weight: 700;
   font-size: 1.3rem;
   line-height: 40px;
 }
-.RoomsandRatesMain .sec1_text h1 {
+.RoomsandRatesMain h1 {
   color: $primary-text;
 }
 .Roomsimg{
@@ -99,3 +98,13 @@ $text-grey: #e4e4e4;
     border-color: $bg-black;
     color: $text-white;
   }
+  @media (max-width: 991px) {
+    .amenities h3 {
+      font-size: 1.25rem;
+    }
+    .RoomsandRatesMain p{
+      font-size: 0.9525rem;
+      line-height: 1.2rem;
+    }
+  }
+  
