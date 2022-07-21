@@ -167,7 +167,6 @@ class RoomsAndRates extends Component {
           </div>
         </div>
         {/* Bottom page Images */}
-
       </motion.div>
     );
   }
