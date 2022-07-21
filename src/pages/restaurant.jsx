@@ -46,7 +46,7 @@ class Restaurant extends Component {
         </div>
         {/* RestaurantDetail1 */}
         <div className="container resto-detail1-container">
-          <div className="row resto-detail1-content justify-content-between">
+          <div className="row  resto-detail1-content justify-content-between">
             <div
               data-aos="fade-up"
               data-aos-offset="450"

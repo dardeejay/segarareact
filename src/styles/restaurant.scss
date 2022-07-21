@@ -21,7 +21,10 @@ $text-grey: #e4e4e4;
   padding: 0;
   box-sizing: border-box;
 }
-
+html,
+body {
+  overflow-x: hidden;
+}
 //resturant title
 .restoBanner {
   background-image: url("../assets/restaurant/restobannertest.jpg");
