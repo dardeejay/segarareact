@@ -163,12 +163,12 @@ class Home extends Component {
               />
             </div>
             <div className="col-sm-4 text-center aboutSegaraText mb-4">
-                  <p>
-                    It is our sole purpose at Segara Villas to make your visit an
-                    unforgettable one. Our professional and gracious staff will
-                    certainly make you feel like you've found a home away from home
-                  </p>
-                <h3 className="">SEGARA HOTELS</h3>
+              <p>
+                It is our sole purpose at Segara Villas to make your visit an
+                unforgettable one. Our professional and gracious staff will
+                certainly make you feel like you've found a home away from home
+              </p>
+              <h3 className="">SEGARA HOTELS</h3>
             </div>
             <div className="col-sm-4">
               <img src={AboutSegara2} className="img-fluid w-100" />
