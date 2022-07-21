@@ -232,6 +232,21 @@ video {
   align-items: center;
   padding-top: 40px;
 }
+.divider2 {
+  width: 100%;
+  height: 150px;
+}
+.divider2 .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+.divider2 h1{
+  color: #512b1d;
+}
 .HomeSwiper-container {
   padding-bottom: 25px;
 }
@@ -311,6 +326,9 @@ video {
   opacity: 1;
 }
 // About segara Section
+.AboutSegara{
+  background-color: #dcd6ce;
+}
 .about_wrapper {
   padding-top: 5.375rem;
   background-color: $primary-text;
@@ -367,8 +385,11 @@ video {
   }
 
   /* banner wrapper */
-  .SegaraHomeDisplay_wrapper {
+  .HomeSwiper{
     height: 25.625rem;
+  }
+  .banner_wrapper{
+    height: 27.625rem;
   }
 }
 

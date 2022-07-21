@@ -19,7 +19,7 @@ class RoomsAndRates extends Component {
           <div className="row">
             <div className="RoomsandRates_frontPage_container">
               <div className="RoomsandRates_frontPage_container_text">
-                <h1 className="display-1">LUXURIOUS STAY</h1>
+                <h1>LUXURIOUS STAY</h1>
               </div>
             </div>
           </div>
@@ -63,7 +63,7 @@ class RoomsAndRates extends Component {
               <div className="col-lg-6 text-center order-sm-1">
                 <img
                   src={VillasImg}
-                  alt="anniversary package"
+                  alt="Villas"
                   className="Roomsimg"
                 />
               </div>
@@ -74,7 +74,7 @@ class RoomsAndRates extends Component {
               <div className="col-lg-6 text-center order-sm-1">
                 <img
                   src={SuitesImg}
-                  alt="anniversary package"
+                  alt="Suites"
                   className="Roomsimg"
                 />
               </div>
@@ -124,7 +124,7 @@ class RoomsAndRates extends Component {
               <div className="col-lg-6 text-center order-sm-1">
                 <img
                   src={ResidenciasImg}
-                  alt="anniversary package"
+                  alt="Residencias"
                   className="Roomsimg"
                 />
               </div>
