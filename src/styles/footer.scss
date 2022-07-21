@@ -29,10 +29,28 @@ $text-grey: #e4e4e4;
 .footer-text {
   margin-top: 3%;
 }
+.footer-text p {
+  font-size: 1rem;
+}
 .footer-text h3 {
   color: $primary-text;
 }
 .footer-text h5 {
   color: black;
   font-family: $tertiary-font;
+}
+
+.footer-end .row .terms-and-condition p {
+  font-size: 1rem !important;
+  color: $text-black !important;
+}
+
+.footer-end .row .col-lg-3 p {
+  font-size: 1.2rem !important;
+  color: $text-black !important;
+}
+
+.footer-end .row .col-lg-3 .row .col-12 {
+  font-size: 1.2rem !important;
+  color: $text-black !important;
 }
