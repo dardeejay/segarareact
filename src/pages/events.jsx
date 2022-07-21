@@ -17,8 +17,17 @@ import event1Pic8 from "../assets/Luxury-Cruise/luxurycruise8.jpg";
 import event1Pic9 from "../assets/Luxury-Cruise/luxurycruise9.jpg";
 import event1Pic10 from "../assets/Luxury-Cruise/luxurycruise10.jpg";
 import { motion } from "framer-motion";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 class Events extends Component {
+  componentDidMount() {
+    // or simply just AOS.init();
+    Aos.init({
+      // initialise with other settings
+      duration: 900,
+    });
+  }
   pics = {
     luxuryCruise1: "../assets/Luxury-Cruise/luxurycruise1.jpg",
   };
@@ -41,7 +50,11 @@ class Events extends Component {
         </div>
         {/*Divider*/}
 
-        <div className="container-fluid events_divider1">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="container-fluid events_divider1"
+        >
           <div className="row">
             <div className="col-sm-12 text-center mb-5 divider_text">
               <h1>MAKE MEMORIES</h1>
@@ -98,7 +111,7 @@ class Events extends Component {
         <div className="seasonal_event1 container-fluid">
           <div className="seasonal_event1_container row justify-content-between">
             <div className="col-md-5 sec1_text">
-              <div className="row gy-0">
+              <div data-aos="fade-right" className="row gy-0">
                 <div className="col-md-12 p-5">
                   <h1>Luxury Dine &amp; Cruise</h1>
                 </div>
@@ -174,7 +187,7 @@ class Events extends Component {
               />
             </div>
             <div className="col-md-5 sec2_text">
-              <div className="row gy-0">
+              <div data-aos="fade-up" className="row gy-0">
                 <div className="col-md-12 p-5">
                   <h1>Anniversary Celebration Package</h1>
                 </div>

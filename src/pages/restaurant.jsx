@@ -76,7 +76,7 @@ class Restaurant extends Component {
           <div className="row resto-detail2-content justify-content-between">
             <div
               data-aos="fade-left"
-              data-aos-offset="100"
+              data-aos-offset="300"
               data-aos-duration="1500"
               className="col-md-5 resto-detail2-text my-2 "
             >
@@ -90,7 +90,7 @@ class Restaurant extends Component {
             </div>
             <div
               data-aos="fade-down"
-              data-aos-offset="250"
+              data-aos-offset="450"
               data-aos-duration="1500"
               className="col-md-4 resto-detail2-img"
             >
@@ -101,11 +101,18 @@ class Restaurant extends Component {
         {/* RestaurantDetail3 */}
         <div className="container resto-detail3-container">
           <div className="row resto-detail3-content justify-content-between">
-            <div data-aos="fade-up" className="col-md-4 resto-detail3-img">
+            <div
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-duration="1500"
+              className="col-md-4 resto-detail3-img"
+            >
               <img src={restoDetail1} alt="" className="img-fluid" />
             </div>
             <div
               data-aos="fade-down"
+              data-aos-duration="1500"
+              data-aos-offset="350"
               className="col-md-5 resto-detail3-text my-2 "
             >
               <h1>Segara Hotels Breakfast</h1>
