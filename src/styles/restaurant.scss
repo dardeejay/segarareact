@@ -31,7 +31,6 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 35.625rem;
 }
 
 .restoBanner .row .restoBannerColumn .menu_btn {
@@ -112,6 +111,7 @@ body {
 @media (max-width: 425px) {
   .restoBanner .row .restoBannerColumn {
     margin-top: 25%;
+    height: 35.625rem;
   }
   //detail1 responsive
   .resto-detail1-container .resto-detail1-content {
