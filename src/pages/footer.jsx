@@ -3,6 +3,7 @@ import "../styles/footer.scss";
 import segaraLogo from "../assets/SegaraHotels.png";
 import tripdAdvisorTemp from "../assets/tripadvisor.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import tripAdvisorLogo from "../assets/tripadvisor.ico";
 function Footer() {
   return (
     <div className="footer-wrapper container">
@@ -58,6 +59,37 @@ function Footer() {
           </div>
         </div>
       </div>
+      {/* <div className="footer-end">
+        <div className="container">
+          <div className="row justify-content-between">
+            <div className="col-3">
+              <p>© Copyright Segara Hotels</p>
+            </div>
+            <div className="col-3">
+              <div className="row text-center justify-content-center">
+                <div className="col-12">Follow Us</div>
+                <div className="col-2">
+                  <p>
+                    <FontAwesomeIcon icon="fa-brands fa-facebook-square fa-lg" />
+                  </p>
+                </div>
+                <div className="col-2">
+                  <p>
+                    {" "}
+                    <FontAwesomeIcon icon="fa-brands fa-instagram fa-lg" />
+                  </p>
+                </div>
+                <div className="col-2 ">
+                  <img src={tripAdvisorLogo} alt="" className="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <p>Contact Us Terms and Condition</p>
+            </div>
+          </div>
+        </div>
+      </div> */}
     </div>
   );
 }
