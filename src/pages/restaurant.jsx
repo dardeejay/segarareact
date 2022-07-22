@@ -12,6 +12,8 @@ class Restaurant extends Component {
     // or simply just AOS.init();
     Aos.init({
       // initialise with other settings
+      once: true,
+      ease: "ease-in-sine",
       duration: 900,
     });
   }
@@ -49,16 +51,16 @@ class Restaurant extends Component {
           <div className="row  resto-detail1-content justify-content-between">
             <div
               data-aos="fade-up"
-              data-aos-offset="450"
               data-aos-duration="1200"
+              data-aos-delay="300"
               className="col-md-4 resto-detail1-img"
             >
               <img src={restoDetail1} alt="" className="img-fluid" />
             </div>
             <div
               data-aos="fade-right"
-              data-aos-offset="300"
               data-aos-duration="1500"
+              data-aos-delay="300"
               className="col-md-5 resto-detail1-text my-2 "
             >
               <h1>Segara Hotels Breakfast</h1>
@@ -76,7 +78,6 @@ class Restaurant extends Component {
           <div className="row resto-detail2-content justify-content-between">
             <div
               data-aos="fade-left"
-              data-aos-offset="300"
               data-aos-duration="1500"
               className="col-md-5 resto-detail2-text my-2 "
             >
@@ -90,7 +91,6 @@ class Restaurant extends Component {
             </div>
             <div
               data-aos="fade-down"
-              data-aos-offset="450"
               data-aos-duration="1500"
               className="col-md-4 resto-detail2-img"
             >
@@ -103,7 +103,6 @@ class Restaurant extends Component {
           <div className="row resto-detail3-content justify-content-between">
             <div
               data-aos="fade-up"
-              data-aos-offset="300"
               data-aos-duration="1500"
               className="col-md-4 resto-detail3-img"
             >
@@ -112,7 +111,6 @@ class Restaurant extends Component {
             <div
               data-aos="fade-down"
               data-aos-duration="1500"
-              data-aos-offset="350"
               className="col-md-5 resto-detail3-text my-2 "
             >
               <h1>Segara Hotels Breakfast</h1>

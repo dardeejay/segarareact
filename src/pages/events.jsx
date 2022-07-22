@@ -25,6 +25,8 @@ class Events extends Component {
     // or simply just AOS.init();
     Aos.init({
       // initialise with other settings
+      once: true,
+      ease: "ease-in-sine",
       duration: 900,
     });
   }
