@@ -90,7 +90,7 @@ class Home extends Component {
           <div className="container">
             <div className="row">
               <div className="col-sm-12 text-center mb-3">
-                <h1>Asian Spices Bar and Restaurant</h1>
+                <h1>Flavors of Asia</h1>
                 <h5>―</h5>
                 <p>
                   An elegant and earthy spot for casual chic dining in the Subic
@@ -104,32 +104,69 @@ class Home extends Component {
           </div>
         </div>
         {/* Resto */}
-        <section id="gallery" class="gallery_wrapper">
-          <div class="container">
-            <div class="row g-2">
-              <div class="col-lg-3 col-sm-2 gallery-item">
-                <img src={HomeGallery1} className="img-fluid w-100" />
-                <div class="gallery-item-content">
-                  <img src={HomeGallery1Hover} className="img-fluid w-100" />
+        <section id="gallery" className="gallery_wrapper">
+          <div className="container">
+            <div className="row g-2 text-center">
+              <div className="col-lg-3 col-sm-2 gallery-item">
+                <img
+                  src={HomeGallery1}
+                  className="img-fluid w-100"
+                  alt="homeGallery1"
+                />
+                <div className="gallery-item-content">
+                  <img
+                    src={HomeGallery1Hover}
+                    className="img-fluid w-100"
+                    alt="homeGallery1hover"
+                  />
                 </div>
               </div>
-              <div class="col-lg-3 col-sm-3 gallery-item">
-                <img src={HomeGallery2} className="img-fluid w-100" />
-                <div class="gallery-item-content">
-                  <img src={HomeGallery2Hover} className="img-fluid w-100" />
+              <div className="col-lg-3 col-sm-3 gallery-item">
+                <img
+                  src={HomeGallery2}
+                  className="img-fluid w-100"
+                  alt="homeGallery2"
+                />
+                <div className="gallery-item-content">
+                  <img
+                    src={HomeGallery2Hover}
+                    className="img-fluid w-100"
+                    alt="homeGallery2hover"
+                  />
                 </div>
               </div>
-              <div class="col-lg-3 col-sm-3 gallery-item optionalcontent">
-                <img src={HomeGallery3} className="img-fluid w-100" />
-                <div class="gallery-item-content">
-                  <img src={HomeGallery3Hover} className="img-fluid w-100" />
+              <div className="col-lg-3 col-sm-3 gallery-item optionalcontent">
+                <img
+                  src={HomeGallery3}
+                  className="img-fluid w-100"
+                  alt="homeGallery3"
+                />
+                <div className="gallery-item-content">
+                  <img
+                    src={HomeGallery3Hover}
+                    className="img-fluid w-100"
+                    alt="homeGallery3hover"
+                  />
                 </div>
               </div>
-              <div class="col-lg-3 col-sm-3 gallery-item optionalcontent">
-                <img src={HomeGallery4} className="img-fluid w-100" />
-                <div class="gallery-item-content">
-                  <img src={HomeGallery4Hover} className="img-fluid w-100" />
+              <div className="col-lg-3 col-sm-3 gallery-item optionalcontent">
+                <img
+                  src={HomeGallery4}
+                  className="img-fluid w-100"
+                  alt="homeGallery4"
+                />
+                <div className="gallery-item-content">
+                  <img
+                    src={HomeGallery4Hover}
+                    className="img-fluid w-100"
+                    alt="homeGallery4hover"
+                  />
                 </div>
+              </div>
+              <div className="col-lg-12">
+                <a href="/restaurant" className="main-btn">
+                  Segara Spices Restaurant
+                </a>
               </div>
             </div>
           </div>
@@ -155,12 +192,12 @@ class Home extends Component {
               />
             </div>
             <div className="col-sm-4 text-center aboutSegaraText mb-2 optionalcontent">
-                  <p>
-                    It is our sole purpose at Segara Hotels to make your visit an
-                    unforgettable one. Our professional and gracious staff will
-                    certainly make you feel like you've found a home away from home
-                  </p>
-                <h3 className="">SEGARA HOTELS</h3>
+              <p>
+                It is our sole purpose at Segara Hotels to make your visit an
+                unforgettable one. Our professional and gracious staff will
+                certainly make you feel like you've found a home away from home
+              </p>
+              <h3 className="">SEGARA HOTELS</h3>
             </div>
             <div className="col-sm-4">
               <img src={AboutSegara2} className="img-fluid w-100" />
@@ -168,7 +205,7 @@ class Home extends Component {
           </div>
         </div>
         {/* About Segara 2 */}
-        <section className="about_wrapper">
+        {/* <section className="about_wrapper">
           <div class="container">
             <div class="row flex-lg-row flex-column-reverse align-items-center justify-content-center">
               <div class="col-lg-6 text-center text-lg-start">
@@ -184,13 +221,13 @@ class Home extends Component {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         {/* Divider */}
         <div className="divider2">
           <div className="container">
             <div className="row">
               <div className="col-sm-12 text-center">
-                <h1>How to get there</h1>
+                <h1>Location</h1>
               </div>
             </div>
           </div>

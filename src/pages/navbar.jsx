@@ -51,7 +51,7 @@ function NavBar() {
                   activeClassName="nav-link active"
                   to="/restaurant"
                 >
-                  Restaurant
+                  Dining
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -63,15 +63,24 @@ function NavBar() {
                   #SegaraExperience
                 </NavLink>
               </li>
-              {/* <li className="nav-item">
-                  <NavLink
-                    className="nav-link"
-                    activeClassName="nav-link active"
-                    to="/about-us"
-                  >
-                    About Us
-                  </NavLink>
-                </li> */}
+              <li className="nav-item">
+                <NavLink
+                  className="nav-link"
+                  activeClassName="nav-link active"
+                  to="/offers"
+                >
+                  Offers
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  className="nav-link"
+                  activeClassName="nav-link active"
+                  to="/contact-us"
+                >
+                  Contact Us
+                </NavLink>
+              </li>
             </ul>
           </div>
         </div>

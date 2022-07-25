@@ -8,6 +8,7 @@ $bg-black: #000;
 $primary-font: "Poppins", sans-serif;
 $secondary-font: "Oswald", sans-serif;
 $tertiary-font: "Abel", sans-serif;
+$fourth-font: "Rubik", sans-serif;
 $primary-text: #512b1d;
 $secondary-text: #b34c00;
 $text-white: #fff;
@@ -26,31 +27,38 @@ $text-grey: #e4e4e4;
   border-top: 1px solid rgba(81, 43, 29, 0.3);
   padding-top: 1%;
 }
-.footer-text {
-  margin-top: 3%;
+
+.footer-header .row .col-12 h1 {
+  color: $primary-color;
 }
-.footer-text p {
-  font-size: 1rem;
+.footer-content .row .col-lg-6 h1 {
+  font-family: $primary-font;
+  font-weight: 700;
+  text-transform: none;
+  color: $primary-color;
 }
-.footer-text h3 {
-  color: $primary-text;
+
+.footer-content .row .col-lg-6 p {
+  margin: 0;
 }
-.footer-text h5 {
+.footer-account h1 {
   color: black;
-  font-family: $tertiary-font;
 }
 
-.footer-end .row .terms-and-condition p {
-  font-size: 1rem !important;
-  color: $text-black !important;
+.footer-account .row .col-12 a {
+  color: $text-black;
+  text-decoration: none;
+  font-size: 200%;
+  margin: 0 2%;
+}
+.footer-account .row .col-12 .tripadvisor-logo {
+  margin-top: -1%;
+  width: 4%;
 }
 
-.footer-end .row .col-lg-3 p {
-  font-size: 1.2rem !important;
-  color: $text-black !important;
-}
-
-.footer-end .row .col-lg-3 .row .col-12 {
-  font-size: 1.2rem !important;
-  color: $text-black !important;
+@media (max-width: 425px) {
+  .footer-account .row .col-12 .tripadvisor-logo {
+    margin-top: -1%;
+    width: 10%;
+  }
 }
