@@ -8,7 +8,7 @@ import AboutUs from "./about-us";
 import ErrorPage from "./error";
 import Menu from "./restaurant/menu";
 import { AnimatePresence } from "framer-motion";
-
+import { ContactUs } from "./contact-us";
 function AnimatedPage() {
   const location = useLocation();
   return (
@@ -21,6 +21,7 @@ function AnimatedPage() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="*" element={<ErrorPage />} />
         <Route path="/restaurant/menu" element={<Menu />} />
+        <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
     </AnimatePresence>
   );
