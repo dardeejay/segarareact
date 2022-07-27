@@ -48,7 +48,7 @@ function NavBar() {
                   Rooms &amp; Rates
                 </NavLink>
                 <div className="dropdown-menu ">
-                  <div className="d-flex justify-content-between">
+                  <div className="d-flex flex-column flex-lg-row justify-content-between">
                     <div className=" d-flex flex-column contents mx-3 ">
                       <h3>Villas</h3>
                       <a className="dropdown-item" href="/">
