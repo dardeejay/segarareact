@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "../styles/contact-us.scss";
 import { motion } from "framer-motion";
@@ -17,10 +17,21 @@ import slider7 from "../assets/contact-us-slider/7.jpg";
 import slider8 from "../assets/contact-us-slider/8.jpg";
 import slider9 from "../assets/contact-us-slider/9.jpg";
 import ReactWeather, { useWeatherBit } from "react-open-weather";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const ContactUs = () => {
+  const renderAlert = () => {
+    return (
+      <div>
+        <p>
+          <FontAwesomeIcon icon="fa-solid fa-check" />
+          &nbsp;Your message was sent succesfully
+        </p>
+      </div>
+    );
+  };
   const form = useRef();
-
+  const [status, setStatus] = useState("");
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -29,6 +40,7 @@ export const ContactUs = () => {
       .then(
         (result) => {
           console.log(result.text);
+          setStatus("SUCCESS");
         },
         (error) => {
           console.log(error.text);
@@ -36,8 +48,36 @@ export const ContactUs = () => {
       );
     e.target.reset();
   };
+
+  useEffect(() => {
+    if (status === "SUCCESS") {
+      setTimeout(() => {
+        setStatus("");
+      }, 2000);
+    }
+  }, [status]);
+  //weather widget
+  const customStyles = {
+    fontFamily: "Abel, sans-serif",
+    gradientStart: "#512b1d",
+    gradientMid: "#572E1B",
+    gradientEnd: "#964B00",
+    locationFontColor: "#FFF",
+    todayTempFontColor: "#FFF",
+    todayDateFontColor: "#B5DEF4",
+    todayRangeFontColor: "#B5DEF4",
+    todayDescFontColor: "#B5DEF4",
+    todayInfoFontColor: "#B5DEF4",
+    todayIconColor: "#FFF",
+    forecastBackgroundColor: "#FFF",
+    forecastSeparatorColor: "#DDD",
+    forecastDateColor: "#777",
+    forecastDescColor: "#777",
+    forecastRangeColor: "#777",
+    forecastIconColor: "#512b1d",
+  };
   const { data, isLoading, errorMessage } = useWeatherBit({
-    key: "ab40fc61175f4bc7a36b7ee097b4a674	",
+    key: "ab40fc61175f4bc7a36b7ee097b4a674",
     lat: "14.814729",
     lon: "120.284895",
     lang: "en",
@@ -123,6 +163,7 @@ export const ContactUs = () => {
                   />
                   <label>Message</label>
                   <textarea name="message" className="form-control" />
+                  {status && renderAlert()}
                   <input
                     type="submit"
                     value="Send"
@@ -156,7 +197,7 @@ export const ContactUs = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-8 col-12 maps-column">
+            <div className="col-lg-4 col-12 maps-column">
               <iframe
                 width="100%"
                 height="280"
@@ -168,17 +209,18 @@ export const ContactUs = () => {
                 title="segara villas"
               ></iframe>
             </div>
-            {/* <div className="col-lg-4 col-12">
+            <div className="col-lg-4 col-12">
               <ReactWeather
+                theme={customStyles}
                 isLoading={isLoading}
                 errorMessage={errorMessage}
                 data={data}
                 lang="en"
                 locationLabel="Subic, Zambales"
                 unitsLabels={{ temperature: "C", windSpeed: "Km/h" }}
-                showForecast
+                showForecast={true}
               />
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
