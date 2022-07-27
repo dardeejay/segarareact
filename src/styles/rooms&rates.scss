@@ -8,6 +8,7 @@ $bg-black: #000;
 $primary-font: "Poppins", sans-serif;
 $secondary-font: "Oswald", sans-serif;
 $cursive-font: "Dancing Script", cursive;
+$hero-font: "Optimus Princeps";
 $primary-text: #512b1d;
 $secondary-text: #b34c00;
 $text-white: #fff;
@@ -120,6 +121,85 @@ $text-grey: #e4e4e4;
       font-size: 2.55rem;
     }
   }
+  //Three Rooms
+  .RoomsMainWrapper{
+    padding: 0px 60px 0px;
+  }
   //Segara Villas
+  .VillasHero_container {
+    background-image: url("../assets/Villas/VillasHero.jpg");
+    position: relative;
+    height: 40.225rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    z-index: -2;
+  }
+  .VillasHero_container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #512b1d;
+    opacity: 0.2;
+    z-index: -1;
+  }
+  .VillasHero_container-text {
+    z-index: 1;
+    margin-left: 5%;
+  }
+  .VillasHero_container h1{
+    font-size: 4.75rem;
+    font-weight: 400;
+    color: $text-white;
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+    font-family: $hero-font;
+  }
+  .RoomsMainContainer p{
+    color: #512b1d !important;
+    font-size: 0.9rem;
+    font-weight: 1000;
+    font-family: $primary-font;
+  }
+  .ImageContainer{
+    position: relative;
+  }
+  .ImgText{
+    position: absolute;
+    bottom: 8px;
+    left: 20px;
+  }
+  .MainRoomimg{
+    width: 100%;
+    height: 100%;
+  }
+  .side{
+    padding-top: 10rem;
+  }
+  .PromoContainer img{
+    width: 100%;
+    height: 100%;
+  }
+  .PromoContainer h1{
+    color: #151515 !important;
+    font-size: 1.9rem;
+    font-weight: 1000;
+    font-family: $primary-font;
+  }
+  @media (max-width: 991px) {
+    .VillasHero_container h1{
+      font-size: 40px;
+    }
+    .RoomsMainWrapper{
+      padding: 0px 0px 0px;
+    }
+    .side{
+      padding-top: 0rem;
+    }
+  }
   
   
