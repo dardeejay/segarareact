@@ -1,0 +1,115 @@
+$primary-color: #3a2f2b;
+$secondary-color: #f9d8ad;
+$bg-color: #f4f4f4;
+$bg-color-segara: #dbd5cd;
+$bg-white: #fff;
+$bg-black: #000;
+//text-styles
+$primary-font: "Poppins", sans-serif;
+$secondary-font: "Oswald", sans-serif;
+$cursive-font: "Dancing Script", cursive;
+$tertiary-font: "Abel", sans-serif;
+$primary-text: #512b1d;
+$secondary-text: #b34c00;
+$text-white: #fff;
+$text-black: #151515;
+$text-grey: #e4e4e4;
+
+//global-styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact_us_container {
+  background-image: url("../assets/contact-us-banner.jpeg");
+  position: relative;
+  height: 35.625rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+}
+.contact_us_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #512b1d;
+  opacity: 0.3;
+  z-index: 0;
+}
+.contact-us-banner-text {
+  z-index: 1;
+  margin-left: 5%;
+}
+.contact-us-banner-text p {
+  color: white !important;
+  width: 60%;
+}
+.form-wrapper {
+  margin-top: 3%;
+}
+
+.form-wrapper .form-container .row .form_column {
+  height: 100%;
+}
+
+.form-wrapper .form-container .row .col-12 .form-control {
+  background-color: $bg-color-segara;
+  border: 1px solid black;
+}
+.main-btn-contact {
+  font-size: 1rem;
+  font-weight: 500;
+  color: $primary-text;
+  text-transform: uppercase;
+  border: 0.1rem solid $bg-black;
+  padding: 0.375rem 1.875rem;
+  border-radius: 1rem;
+  line-height: 1.75rem;
+  display: inline-block;
+  transition: all 0.3s ease-out 0s;
+  margin: 50px 20px 20px;
+  text-decoration: none;
+  background-color: $bg-color-segara;
+}
+.main-btn-contact:hover {
+  background-color: $primary-text;
+  border-color: $bg-black;
+  color: $text-white;
+}
+.form-wrapper .form-container .row .img-container {
+  height: 25rem;
+}
+
+.form-wrapper .form-container .row .col-12 .swiper-container {
+  height: 100%;
+}
+.maps-details-section .container .row .details-column h1 {
+  color: $primary-text;
+}
+.maps-details-section {
+  margin-top: 3%;
+}
+.maps-details-section .container .row .maps-column iframe {
+  height: 100%;
+}
+@media (max-width: 425px) {
+  .contact-us-banner-text {
+    z-index: 1;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-us-banner-text {
+    z-index: 1;
+    margin: 0;
+    text-align: center;
+  }
+}
