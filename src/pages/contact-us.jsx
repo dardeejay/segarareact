@@ -25,7 +25,8 @@ export const ContactUs = () => {
       <div>
         <p>
           <FontAwesomeIcon icon="fa-solid fa-check" />
-          &nbsp;Your message was sent succesfully
+          &nbsp;We received your message, we'll get back to you as soon as we
+          can.
         </p>
       </div>
     );
@@ -53,7 +54,7 @@ export const ContactUs = () => {
     if (status === "SUCCESS") {
       setTimeout(() => {
         setStatus("");
-      }, 2000);
+      }, 3000);
     }
   }, [status]);
   //weather widget
