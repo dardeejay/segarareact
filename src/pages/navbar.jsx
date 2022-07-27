@@ -36,14 +36,23 @@ function NavBar() {
                   Home
                 </NavLink>
               </li>
-              <li className="nav-item">
+              <li className="nav-item ">
                 <NavLink
-                  className="nav-link"
-                  activeClassName="nav-link active"
+                  className="nav-link "
+                  activeClassName="nav-link  active"
                   to="/rooms-and-rates"
+                  // role="button"
+                  // data-bs-toggle="dropdown"
+                  // aria-expanded="false"
                 >
                   Rooms &amp; Rates
                 </NavLink>
+                {/* <ul className="dropdown-menu">
+                  <li className="dropdown-item"><h1>Villas</h1>
+                  <p> </p></li>
+                  <li className="dropdown-item">Suites</li>
+                  <li className="dropdown-item">Residencias</li>
+                </ul> */}
               </li>
               <li className="nav-item">
                 <NavLink

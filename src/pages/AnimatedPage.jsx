@@ -9,6 +9,9 @@ import ErrorPage from "./error";
 import Menu from "./restaurant/menu";
 import { AnimatePresence } from "framer-motion";
 import { ContactUs } from "./contact-us";
+import Residencias from "./rooms-and-rates/residencias";
+import Suites from "./rooms-and-rates/suites";
+import Villas from "./rooms-and-rates/villas";
 function AnimatedPage() {
   const location = useLocation();
   return (
@@ -22,6 +25,9 @@ function AnimatedPage() {
         <Route path="*" element={<ErrorPage />} />
         <Route path="/restaurant/menu" element={<Menu />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/rooms-and-rates/residencias" element={<Residencias />} />
+        <Route path="/rooms-and-rates/suites" element={<Suites />} />
+        <Route path="/rooms-and-rates/villas" element={<Villas />} />
       </Routes>
     </AnimatePresence>
   );

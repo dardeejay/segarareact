@@ -62,11 +62,11 @@ class Home extends Component {
         </div>
         {/* Swiper */}
         <div className="HomeSwiper-container">
-        <div className="swiper-btn">
-              <a href="" className="main-btn">
-                Comfort & Luxury
-              </a>
-            </div>
+          <div className="swiper-btn">
+            <a href="" className="main-btn">
+              Comfort & Luxury
+            </a>
+          </div>
           <Swiper
             modules={[EffectFade, Pagination, Navigation, Autoplay]}
             effect="fade"
@@ -219,10 +219,10 @@ class Home extends Component {
             </SwiperSlide>
           </Swiper>
           <div className="text-center">
-              <a href="" className="main-btn">
-                Make it happen!
-              </a>
-            </div>
+            <a href="/events" className="main-btn">
+              Make it happen!
+            </a>
+          </div>
         </div>
         {/*<div className="container-fluid AboutSegara">
           <div className="row gy-1 flex-lg-row align-items-center justify-content-center">

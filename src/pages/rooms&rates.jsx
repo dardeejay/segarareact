@@ -55,28 +55,20 @@ class RoomsAndRates extends Component {
                   </div>
                 </div>
                 <div className="col-md-12 px-5 text-center">
-                  <a className="main-btn-rooms" href="/">
+                  <a className="main-btn-rooms" href="/rooms-and-rates/villas">
                     Book a Villa
                   </a>
                 </div>
               </div>
               <div className="col-lg-6 text-center order-sm-1">
-                <img
-                  src={VillasImg}
-                  alt="Villas"
-                  className="Roomsimg"
-                />
+                <img src={VillasImg} alt="Villas" className="Roomsimg" />
               </div>
             </div>
           </div>
           <div className="RoomsandRatesMain container-fluid">
             <div className="RoomsandRatesMain_container row flex-lg-row">
               <div className="col-lg-6 text-center order-sm-1">
-                <img
-                  src={SuitesImg}
-                  alt="Suites"
-                  className="Roomsimg"
-                />
+                <img src={SuitesImg} alt="Suites" className="Roomsimg" />
               </div>
               <div className="col-md-6 sec1_text order-sm-2 order-lg-1">
                 <div className="row gy-0">
@@ -93,7 +85,7 @@ class RoomsAndRates extends Component {
                   </div>
                 </div>
                 <div className="col-md-12 px-5 text-center">
-                  <a className="main-btn-rooms" href="/">
+                  <a className="main-btn-rooms" href="/rooms-and-rates/suites">
                     Book a Suite
                   </a>
                 </div>
@@ -116,7 +108,10 @@ class RoomsAndRates extends Component {
                   </div>
                 </div>
                 <div className="col-md-12 px-5 text-center">
-                  <a className="main-btn-rooms" href="/">
+                  <a
+                    className="main-btn-rooms"
+                    href="/rooms-and-rates/residencias"
+                  >
                     Book a Residencia
                   </a>
                 </div>
