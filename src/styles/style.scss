@@ -146,7 +146,9 @@ p {
   font-family: $tertiary-font;
   display: inline-block;
 }
-
+.nav-item .dropdown-menu .d-flex h3 {
+  border-bottom: 1px solid rgba(81, 43, 29, 0.3);
+}
 .nav-link:hover,
 .nav-link.active {
   color: $secondary-text !important;
@@ -252,7 +254,7 @@ video {
 .divider2 h1 {
   color: #512b1d;
 }
-.HomeSwiperSlide{
+.HomeSwiperSlide {
   z-index: -1;
 }
 .HomeSwiper-container {
@@ -262,7 +264,7 @@ video {
 .HomeSwiper {
   height: 43.625rem;
 }
-.swiper-btn{
+.swiper-btn {
   z-index: 4;
   position: absolute;
   margin-left: auto;
@@ -345,7 +347,7 @@ video {
 }
 
 // About segara Section
-.AboutSwiper{
+.AboutSwiper {
   height: 37.625rem;
 }
 .AboutSwiper .swiper-pagination-bullet {

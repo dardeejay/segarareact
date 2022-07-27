@@ -36,23 +36,48 @@ function NavBar() {
                   Home
                 </NavLink>
               </li>
-              <li className="nav-item ">
+              <li className="nav-item dropdown">
                 <NavLink
-                  className="nav-link "
-                  activeClassName="nav-link  active"
+                  className="nav-link dropdown-toggle"
+                  activeClassName="nav-link dropdown-toggle active"
                   to="/rooms-and-rates"
-                  // role="button"
-                  // data-bs-toggle="dropdown"
-                  // aria-expanded="false"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
                   Rooms &amp; Rates
                 </NavLink>
-                {/* <ul className="dropdown-menu">
-                  <li className="dropdown-item"><h1>Villas</h1>
-                  <p> </p></li>
-                  <li className="dropdown-item">Suites</li>
-                  <li className="dropdown-item">Residencias</li>
-                </ul> */}
+                <div className="dropdown-menu ">
+                  <div className="d-flex justify-content-between">
+                    <div className=" d-flex flex-column contents mx-3 ">
+                      <h3>Villas</h3>
+                      <a className="dropdown-item" href="/">
+                        Junior Villas
+                      </a>
+                      <a className="dropdown-item" href="/">
+                        Executive Villas
+                      </a>
+                    </div>
+                    <div className=" d-flex flex-column contents mx-1">
+                      <h3>Rooms</h3>
+                      <a className="dropdown-item" href="/">
+                        Junior Rooms
+                      </a>
+                      <a className="dropdown-item" href="/">
+                        Executive Rooms
+                      </a>
+                    </div>
+                    <div className="d-flex flex-column  contents mx-3">
+                      <h3>Residencias</h3>
+                      <a className="dropdown-item" href="/">
+                        Family Residencias
+                      </a>
+                      <a className="dropdown-item" href="/">
+                        Friends Residencias
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </li>
               <li className="nav-item">
                 <NavLink

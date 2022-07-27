@@ -63,7 +63,7 @@ class Home extends Component {
         {/* Swiper */}
         <div className="HomeSwiper-container">
           <div className="swiper-btn">
-            <a href="" className="main-btn">
+            <a href="/rooms-and-rates" className="main-btn">
               Comfort & Luxury
             </a>
           </div>
