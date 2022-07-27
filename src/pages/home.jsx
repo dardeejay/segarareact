@@ -25,6 +25,11 @@ import HomeGallery6 from "../assets/HomeGallery/6.jpg";
 import AboutSegara1 from "../assets/Home Page/about_banner.jpg";
 import AboutSegara2 from "../assets/Home Page/about_banner2.jpg";
 import SegaraLogo from "../assets/SegaraHotels.png";
+import AboutSlide1 from "../assets/HomeAboutSwipe/1.jpg";
+import AboutSlide2 from "../assets/HomeAboutSwipe/2.jpg";
+import AboutSlide3 from "../assets/HomeAboutSwipe/3.jpg";
+import AboutSlide4 from "../assets/HomeAboutSwipe/4.jpg";
+import AboutSlide5 from "../assets/HomeAboutSwipe/5.jpg";
 import { Row } from "react-bootstrap";
 
 class Home extends Component {
@@ -32,7 +37,6 @@ class Home extends Component {
   style = {
     backgroundImage: `url(${BackgroundImage})`,
   };
-
   render() {
     return (
       <motion.div
@@ -51,8 +55,6 @@ class Home extends Component {
           <div className="container">
             <div className="row">
               <div className="col-sm-12 text-center mb-5">
-                <h3>A TRULY LUXURIOUS UNFORGETTABLE STAY</h3>
-                <h5>―</h5>
                 <h1>VILLAS • SUITES • RESIDENCIAS</h1>
               </div>
             </div>
@@ -60,6 +62,11 @@ class Home extends Component {
         </div>
         {/* Swiper */}
         <div className="HomeSwiper-container">
+        <div className="swiper-btn">
+              <a href="" className="main-btn">
+                Comfort & Luxury
+              </a>
+            </div>
           <Swiper
             modules={[EffectFade, Pagination, Navigation, Autoplay]}
             effect="fade"
@@ -71,8 +78,8 @@ class Home extends Component {
             loop
             className="HomeSwiper"
           >
-            <SwiperSlide className="HomeSwiperSlide">
-              <img src={HomeSlide1} alt="slider1" className="" />
+            <SwiperSlide>
+              <img src={HomeSlide1} alt="slider2" className="" />
             </SwiperSlide>
             <SwiperSlide>
               <img src={HomeSlide2} alt="slider2" className="" />
@@ -176,14 +183,48 @@ class Home extends Component {
           <div className="container">
             <div className="row">
               <div className="col-sm-12 text-center">
-                <h1>Know More About Us</h1>
+                <h1>#SegaraExperience</h1>
                 <h5></h5>
               </div>
             </div>
           </div>
         </div>
-        {/*  About Segara */}
-        <div className="container-fluid AboutSegara">
+        {/*  About Segara Swiper */}
+        <div className="Swiper-container">
+          <Swiper
+            modules={[EffectFade, Pagination, Navigation, Autoplay]}
+            effect="fade"
+            autoplay={(true, { disableOnInteraction: false })}
+            speed={800}
+            slidesPerView={1}
+            navigation={true}
+            pagination={{ clickable: true }}
+            loop
+            className="AboutSwiper"
+          >
+            <SwiperSlide>
+              <img src={AboutSlide1} alt="slider2" className="text-center" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={AboutSlide2} alt="slider2" className="text-center" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={AboutSlide3} alt="slider3" className="text-center" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={AboutSlide4} alt="slider4" className="text-center" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={AboutSlide5} alt="slider5" className="" />
+            </SwiperSlide>
+          </Swiper>
+          <div className="text-center">
+              <a href="" className="main-btn">
+                Make it happen!
+              </a>
+            </div>
+        </div>
+        {/*<div className="container-fluid AboutSegara">
           <div className="row gy-1 flex-lg-row align-items-center justify-content-center">
             <div className="col-sm-4">
               <img
@@ -203,7 +244,7 @@ class Home extends Component {
               <img src={AboutSegara2} className="img-fluid w-100" />
             </div>
           </div>
-        </div>
+        </div>*/}
         {/* About Segara 2 */}
         {/* <section className="about_wrapper">
           <div class="container">

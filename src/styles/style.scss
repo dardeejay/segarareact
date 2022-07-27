@@ -252,11 +252,24 @@ video {
 .divider2 h1 {
   color: #512b1d;
 }
+.HomeSwiperSlide{
+  z-index: -1;
+}
 .HomeSwiper-container {
   padding-bottom: 25px;
+  display: flex;
 }
 .HomeSwiper {
   height: 43.625rem;
+}
+.swiper-btn{
+  z-index: 4;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 .swiper-slide img {
   display: block;
@@ -332,6 +345,29 @@ video {
 }
 
 // About segara Section
+.AboutSwiper{
+  height: 37.625rem;
+}
+.AboutSwiper .swiper-pagination-bullet {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  background-color: #f9d8ad;
+}
+.AboutSwiper .swiper-button-prev {
+  color: $secondary-color;
+}
+.AboutSwiper .swiper-button-prev:hover {
+  color: $secondary-text;
+}
+.AboutSwiper .swiper-button-next {
+  color: $secondary-color;
+}
+.AboutSwiper .swiper-button-next:hover {
+  color: $secondary-text;
+}
+.divider .container .row h1 {
+  color: $primary-text;
+}
 .AboutSegara {
   background-color: #dcd6ce;
 }
