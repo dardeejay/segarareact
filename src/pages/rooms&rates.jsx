@@ -4,6 +4,7 @@ import "../styles/rooms&rates.scss";
 import VillasImg from "../assets/Villas.jpg";
 import SuitesImg from "../assets/Suites.jpg";
 import ResidenciasImg from "../assets/Residencias.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class RoomsAndRates extends Component {
   state = {};
@@ -38,10 +39,10 @@ class RoomsAndRates extends Component {
         </div>
         {/*Rooms Container*/}
         <div>
-          <div className="RoomsandRatesMain container-fluid">
+          <div className="RoomsandRatesMain container-fluid d-flex justify-content-center">
             <div className="RoomsandRatesMain_container row flex-lg-row">
-              <div className="col-md-6 sec1_text order-sm-2 order-lg-1">
-                <div className="row gy-0">
+              <div className="RoomsContainerText col-md-6 order-sm-2 order-lg-1 text-center">
+                <div className="row">
                   <div className="col-md-6 p-5">
                     <h1>Villas</h1>
                   </div>
@@ -55,31 +56,23 @@ class RoomsAndRates extends Component {
                   </div>
                 </div>
                 <div className="col-md-12 px-5 text-center">
-                  <a className="main-btn-rooms" href="/">
+                  <a className="main-btn-rooms" href="/rooms-and-rates/villas">
                     Book a Villa
                   </a>
                 </div>
               </div>
               <div className="col-lg-6 text-center order-sm-1">
-                <img
-                  src={VillasImg}
-                  alt="Villas"
-                  className="Roomsimg"
-                />
+                <img src={VillasImg} alt="Villas" className="Roomsimg" />
               </div>
             </div>
           </div>
-          <div className="RoomsandRatesMain container-fluid">
+          <div className="RoomsandRatesMain container-fluid d-flex justify-content-center">
             <div className="RoomsandRatesMain_container row flex-lg-row">
               <div className="col-lg-6 text-center order-sm-1">
-                <img
-                  src={SuitesImg}
-                  alt="Suites"
-                  className="Roomsimg"
-                />
+                <img src={SuitesImg} alt="Suites" className="Roomsimg" />
               </div>
-              <div className="col-md-6 sec1_text order-sm-2 order-lg-1">
-                <div className="row gy-0">
+              <div className="col-md-6 order-sm-2 order-lg-1 text-center">
+                <div className="row">
                   <div className="col-md-6 p-5">
                     <h1>Suites</h1>
                   </div>
@@ -100,14 +93,14 @@ class RoomsAndRates extends Component {
               </div>
             </div>
           </div>
-          <div className="RoomsandRatesMain container-fluid">
+          <div className="RoomsandRatesMain container-fluid d-flex justify-content-center">
             <div className="RoomsandRatesMain_container row flex-lg-row">
-              <div className="col-md-6 sec1_text order-sm-2 order-lg-1">
-                <div className="row gy-0">
+              <div className="col-md-6 order-sm-2 order-lg-1">
+                <div className="row">
                   <div className="col-md-6 p-5">
                     <h1>Residencias</h1>
                   </div>
-                  <div className="col-md-12 px-5">
+                  <div className="col-md-12 px-5 text-center">
                     <p>
                       The newest Asian-Mexican themed hotel and condo in Subic
                       Bay. Offering more than 40 rooms, Segara Residencias is
@@ -145,24 +138,102 @@ class RoomsAndRates extends Component {
         </div>
         {/* amenities */}
         <div className="amenities container-fluid">
-          <div className="ameneties row flex-lg-row">
-            <div className="col-sm-4 text-center">
-              <h3>Pool</h3>
-              <h3>Free parking</h3>
-              <h3>Outdoor dining area</h3>
-              <h3>Free breakfast</h3>
+          <div className="row flex-lg-row">
+            <div className="col-sm-4 d-flex justify-content-center">
+              <div className="amenitiesContainer">
+                <h3>
+                  <FontAwesomeIcon
+                    className="amenitiesIcon"
+                    icon="fa-solid fa-circle-check"
+                  />
+                  Pool
+                </h3>
+                <h3>
+                  <FontAwesomeIcon
+                    className="amenitiesIcon"
+                    icon="fa-solid fa-circle-check"
+                  />
+                  Free parking
+                </h3>
+                <h3>
+                  <FontAwesomeIcon
+                    className="amenitiesIcon"
+                    icon="fa-solid fa-circle-check"
+                  />
+                  Outdoor dining area
+                </h3>
+                <h3>
+                  <FontAwesomeIcon
+                    className="amenitiesIcon"
+                    icon="fa-solid fa-circle-check"
+                  />
+                  Free breakfast
+                </h3>
+              </div>
             </div>
-            <div className="col-sm-4 text-center">
-              <h3>King size luxury bed</h3>
-              <h3>Wooden flooring</h3>
-              <h3>Hot and cold water</h3>
-              <h3>Laundry service</h3>
+            <div className="col-sm-4 d-flex justify-content-center">
+              <div className="amenitiesContainer">
+                <h3>
+                  <FontAwesomeIcon
+                    className="amenitiesIcon"
+                    icon="fa-solid fa-circle-check"
+                  />
+                  King Size Luxury Bed
+                </h3>
+                <h3>
+                  <FontAwesomeIcon
+                    className="amenitiesIcon"
+                    icon="fa-solid fa-circle-check"
+                  />
+                  Wooden flooring
+                </h3>
+                <h3>
+                  <FontAwesomeIcon
+                    className="amenitiesIcon"
+                    icon="fa-solid fa-circle-check"
+                  />
+                  Hot and cold water
+                </h3>
+                <h3>
+                  <FontAwesomeIcon
+                    className="amenitiesIcon"
+                    icon="fa-solid fa-circle-check"
+                  />
+                  Laundry service
+                </h3>
+              </div>
             </div>
-            <div className="col-sm-4 text-center">
-              <h3>Large balcony</h3>
-              <h3>Free Wi-Fi</h3>
-              <h3>Air conditioning</h3>
-              <h3>Non-smoking hotel</h3>
+            <div className="col-sm-4 d-flex justify-content-center">
+              <div className="amenitiesContainer">
+                <h3>
+                  <FontAwesomeIcon
+                    className="amenitiesIcon"
+                    icon="fa-solid fa-circle-check"
+                  />
+                  Large balcony
+                </h3>
+                <h3>
+                  <FontAwesomeIcon
+                    className="amenitiesIcon"
+                    icon="fa-solid fa-circle-check"
+                  />
+                  Free Wi-Fi
+                </h3>
+                <h3>
+                  <FontAwesomeIcon
+                    className="amenitiesIcon"
+                    icon="fa-solid fa-circle-check"
+                  />
+                  Air conditioning
+                </h3>
+                <h3>
+                  <FontAwesomeIcon
+                    className="amenitiesIcon"
+                    icon="fa-solid fa-circle-check"
+                  />
+                  Non-smoking hotel
+                </h3>
+              </div>
             </div>
           </div>
         </div>
