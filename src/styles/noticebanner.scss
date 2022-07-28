@@ -1,0 +1,45 @@
+$primary-color: #3a2f2b;
+$secondary-color: #f9d8ad;
+$bg-color: #f4f4f4;
+$bg-color-segara: #dbd5cd;
+$bg-white: #fff;
+$bg-black: #000;
+//text-styles
+$primary-font: "Poppins", sans-serif;
+$secondary-font: "Oswald", sans-serif;
+$tertiary-font: "Abel", sans-serif;
+$fourth-font: "Rubik", sans-serif;
+$primary-text: #512b1d;
+$secondary-text: #b34c00;
+$text-white: #fff;
+$text-black: #151515;
+$text-grey: #e4e4e4;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.notice-banner .notice-container {
+  border: 1px solid black;
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(81, 43, 29, 0.7);
+}
+.notice-banner .notice-container p {
+  font-size: 1rem;
+  color: white !important;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.notice-container .row .col-10 button {
+  text-decoration: underline;
+}
+.btn {
+  color: black !important;
+}
+
+#modal-cons .modal-heading {
+  border-bottom: 1px solid rgba(81, 43, 29, 0.3);
+}

@@ -31,12 +31,19 @@ import AboutSlide3 from "../assets/HomeAboutSwipe/3.jpg";
 import AboutSlide4 from "../assets/HomeAboutSwipe/4.jpg";
 import AboutSlide5 from "../assets/HomeAboutSwipe/5.jpg";
 import { Row } from "react-bootstrap";
-
+import { NoticeBanner } from "./NoticeBanner";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 class Home extends Component {
-  state = {};
-  style = {
-    backgroundImage: `url(${BackgroundImage})`,
+  constructor(props) {
+    super(props);
+    this.state = {
+      openBanner: true,
+    };
+  }
+  updateBanner = (value) => {
+    this.setState({ openBanner: value });
   };
+
   render() {
     return (
       <motion.div
@@ -46,6 +53,10 @@ class Home extends Component {
       >
         {/* Video */}
         <section id="home" className="banner_wrapper p-0">
+          {this.state.openBanner && (
+            <NoticeBanner closeBanner={this.updateBanner} />
+          )}
+
           <div className="video-container">
             <video src={Video} autoPlay="true" loop="true" muted="true" />
           </div>
