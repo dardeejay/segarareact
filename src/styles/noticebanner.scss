@@ -22,7 +22,6 @@ $text-grey: #e4e4e4;
 }
 
 .notice-banner .notice-container {
-  border: 1px solid black;
   position: absolute;
   z-index: 2;
   background-color: rgba(81, 43, 29, 0.7);
@@ -36,10 +35,57 @@ $text-grey: #e4e4e4;
 .notice-container .row .col-10 button {
   text-decoration: underline;
 }
-.btn {
-  color: white !important;
+.modal-btn {
+  background-color: white;
+  border: none;
+  height: 1.8rem;
+}
+.notice-btn {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 10px;
+  color: white;
+}
+.Modal1 .modal-heading {
+  border-bottom: 1px solid rgba(81, 43, 29, 0.3);
 }
 
-#modal-cons .modal-heading {
-  border-bottom: 1px solid rgba(81, 43, 29, 0.3);
+.Modal1 .modal-body p {
+  font-size: 1rem;
+  color: black !important;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Modal1 {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  right: 0;
+  bottom: 40px;
+  border: 1px solid #ccc;
+  background: #fff;
+  overflow: auto;
+  width: 35%;
+  margin: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: none;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .Modal1 {
+    width: 80%;
+  }
+  .Modal1 .modal-body p {
+    line-height: 1.5;
+  }
+}
+.Overlay1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5);
 }
