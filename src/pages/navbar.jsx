@@ -47,35 +47,13 @@ function NavBar() {
                 >
                   Rooms &amp; Rates
                 </NavLink>
-                <div className="dropdown-menu ">
-                  <div className="d-flex flex-column flex-lg-row justify-content-between">
-                    <div className=" d-flex flex-column contents mx-3 ">
-                      <h3>Villas</h3>
-                      <a className="dropdown-item" href="/">
-                        Junior Villas
-                      </a>
-                      <a className="dropdown-item" href="/">
-                        Executive Villas
-                      </a>
-                    </div>
-                    <div className=" d-flex flex-column contents mx-1">
-                      <h3>Rooms</h3>
-                      <a className="dropdown-item" href="/">
-                        Junior Rooms
-                      </a>
-                      <a className="dropdown-item" href="/">
-                        Executive Rooms
-                      </a>
-                    </div>
-                    <div className="d-flex flex-column  contents mx-3">
-                      <h3>Residencias</h3>
-                      <a className="dropdown-item" href="/">
-                        Family Residencias
-                      </a>
-                      <a className="dropdown-item" href="/">
-                        Friends Residencias
-                      </a>
-                    </div>
+                <div className="dropdown-menu " style={{ borderRadius: "0px" }}>
+                  <div className="d-flex flex-column">
+                    <h5 className="dropdown-item">Villas</h5>
+
+                    <h5 className="dropdown-item">Suites</h5>
+
+                    <h5 className="dropdown-item">Residencias</h5>
                   </div>
                 </div>
               </li>

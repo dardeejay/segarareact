@@ -146,8 +146,9 @@ p {
   font-family: $tertiary-font;
   display: inline-block;
 }
-.nav-item .dropdown-menu .d-flex h3 {
-  border-bottom: 1px solid rgba(81, 43, 29, 0.3);
+.nav-item .dropdown-menu .d-flex h5 {
+  font-family: $tertiary-font;
+  text-transform: uppercase;
 }
 .nav-link:hover,
 .nav-link.active {
