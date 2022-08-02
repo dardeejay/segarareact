@@ -10,7 +10,6 @@ function Messenger() {
         appId="787123462284202"
         minimized="false"
       />
-      ,
     </div>
   );
 }

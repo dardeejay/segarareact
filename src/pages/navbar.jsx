@@ -47,13 +47,22 @@ function NavBar() {
                 >
                   Rooms &amp; Rates
                 </NavLink>
-                <div className="dropdown-menu " style={{ borderRadius: "0px" }}>
+                <div
+                  className="dropdown-menu dropdown-menu-start"
+                  style={{ borderRadius: "0px" }}
+                >
                   <div className="d-flex flex-column">
-                    <h5 className="dropdown-item">Villas</h5>
+                    <h5 className="dropdown-item  text-center text-lg-start ">
+                      <a href="/rooms-and-rates/villas">Villas</a>
+                    </h5>
 
-                    <h5 className="dropdown-item">Suites</h5>
+                    <h5 className="dropdown-item text-center text-lg-start">
+                      Suites
+                    </h5>
 
-                    <h5 className="dropdown-item">Residencias</h5>
+                    <h5 className="dropdown-item text-center text-lg-start">
+                      Residencias
+                    </h5>
                   </div>
                 </div>
               </li>

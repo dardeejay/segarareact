@@ -7,11 +7,11 @@ import Footer from './pages/footer';
 function App() {
   return (
     <Router>
+      <Messenger />
       <NavBar />
       <AnimatedPage/>
       <Footer/>
-      <Messenger />
-
+      
     </Router>
   );
 }
